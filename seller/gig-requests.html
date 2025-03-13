@@ -1,0 +1,2307 @@
+<!doctype html>
+<!--[if IE 7]><html class="ie ie7"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if !(IE 7) | !(IE 8)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+    <head>
+                <title>Gigs | SproutGigs</title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap&amp;family=Farsan" rel="stylesheet">
+
+        <!-- Hotjar Tracking Code for https://sproutgigs.com/ -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:2261922,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+
+        <script>
+            var arguments = {};
+                        arguments = { userId: '2bbff89f' };
+                        window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push(arguments);
+        </script>
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P6G6QRQ');</script>
+        <!-- End Google Tag Manager -->
+
+                    <link rel="stylesheet" href="/assets/css/vendor.min.css?v=202310261236"/>
+            <link rel="stylesheet" href="/assets/css/app.min.css?v=202409201812"/>
+            <script src="/assets/js/jquery.min.js"></script>
+            <script src="/assets/js/pico-vendor.min.js?v=202410031253"></script>
+            <script src="/assets/js/pico-app.min.js?v=202410031253"></script>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="/assets/js/vendor/respond.min.js"></script>
+        <script src="/assets/js/vendor/PIE.js"></script>
+        <![endif]-->
+
+        <script>
+            var csrf_token = '65e2bbbf53039c60fc13812626b110dd';
+            var systemAlert = '';
+            var tasks_ok = '0';
+        </script>
+
+            </head>
+
+    <body class="dark-mode ">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6G6QRQ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <div class="site d-flex flex-column min-vh-100">
+              <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid container-fluid--max-lg">
+    <img class="navbar__gradient" src="/gradient.html">
+    <a class="navbar-brand" href="/browse-gigs.html">
+      <img src="/assets/images/logo-sg.svg" alt="SproutGigs" class="navbar-brand__regular d-none">
+      <img src="/assets/images/logo-sg-light.svg" alt="SproutGigs" class="navbar-brand__dark-mode">
+    </a>
+
+    <div class="d-none d-lg-block flex-grow-0">
+      <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown ml-0">
+            <a class="nav-link" href="/worker/gigs.html" data-toggle="dropdown">
+              <span>
+                Gigs <i class="fas fa-caret-down"></i>
+              </span>
+                          </a>
+            <div class="dropdown-menu mt-3">
+              <a class="dropdown-item d-flex align-items-center justify-content-between text-body" href="/browse-gigs.html">Browse Gigs</a>
+                              <a class="dropdown-item d-flex align-items-center justify-content-between text-body" href="/seller/gig-requests.html">Browse Gig Requests</a>
+                <a class="dropdown-item d-flex align-items-center justify-content-between text-body" href="/seller/posted-gigs.html">My Posted Gigs</a>
+                <a
+                  class="dropdown-item d-flex align-items-center justify-content-between text-body"
+                  href="/seller/gig-orders.html"
+                                  >
+                  My Gig Orders
+                                  </a>
+                <a class="dropdown-item d-flex align-items-center justify-content-between text-body" href="/seller/post-gig.html">Post Gig</a>
+                          </div>
+          </li>
+        
+                              <li class="nav-item dropdown ml-0">
+              <a class="nav-link" href="/worker.html" data-toggle="dropdown"><span>MicroJobs <i class="fas fa-caret-down"></i></span></a>
+              <div class="dropdown-menu mt-3">
+                <a class="dropdown-item d-flex align-items-center justify-content-between text-body" href="/jobs.html">Find Jobs</a>
+                <a class="dropdown-item d-flex align-items-center justify-content-between text-body" href="/worker.html">Finished Tasks <span>0</span></a>
+                <hr class="m-0">
+                <div class="py-2 px-4">
+                  <div class="py-2 mb-0 op-6 d-flex align-items-center justify-content-between">
+                    <strong>satisfied + paid</strong>
+                    <span>0</span>
+                  </div>
+                  <div class="py-2 mb-0 op-6 d-flex align-items-center justify-content-between">
+                    <strong>pending review</strong>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+                  
+                  <li class="nav-item dropdown ml-0">
+            <a class="nav-link" href="/surveys-offers.html" data-toggle="dropdown"><span>Surveys &amp; Offers</span> <i class="fas fa-caret-down"></i><sup class="symbol symbol--warning pb-0 ml-1">New</sup></a>
+            <div class="dropdown-menu mt-3">
+              <a class="dropdown-item text-body pb-2" href="/surveys-offers.html">Browse Surveys &amp; Offers</a>
+              <a class="dropdown-item text-body" href="/my-surveys-offers.html">My Surveys &amp; Offers</a>
+            </div>
+          </li>
+        
+        <li class="nav-item ml-0">
+          <a class="nav-link" href="/wallet.html"><span>Wallet</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar-right d-flex align-items-center">
+      <ul class="nav align-items-center navbar-nav-2 nav--dynamic d-none d-lg-flex">
+
+                  <a class="nav-link switch-profile-text switch-profile-text--desktop d-flex align-items-center flex-nowrap" href="#" data-change-profile-to="employer">
+            <span>buyer</span>
+            <div class="zawp-toggle zawp-toggle--checked-last not-functional mx-2"><span class="zawp-toggle__switch m-0"></span></div>
+            <span>freelancer</span>
+          </a>
+        
+                  <li class="nav-item">
+            <a class="nav-link" href="/tickets.html" data-tippy="true" data-tippy-content="support center">
+              <i class="far fa-question-circle"></i>
+            </a>
+          </li>
+                <li class="nav-item dropdown navbar__dropdown" id="notificationsDropdown">
+          <a class="nav-link notificationDropdown" href="#" data-toggle="dropdown" data-tippy="true" data-tippy-content="view notifications">
+            <i class="far fa-bell"></i>
+                      </a>
+          <div class="notifications dropdown-menu dropdown-menu-right">
+                <ul class="nav nav-tabs justify-content-between" id="notificationsTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link text-primary" id="gigs-notifications-tab" href="#gigs-notifications" role="tab" aria-controls="gigs-notifications" aria-selected="false">Gigs</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link text-primary" id="jobs-notifications-tab" href="#jobs-notifications" role="tab" aria-controls="jobs-notifications" aria-selected="false">MicroJobs</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link text-primary active" id="other-notifications-tab" href="#other-notifications" role="tab" aria-controls="other-notifications" aria-selected="true">Other</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="notificationsTabContent">
+                    <div class="tab-pane fade" id="gigs-notifications" role="tabpanel" aria-labelledby="gigs-notifications-tab">
+                                                    <span class="notification text-center">You don't have any notifications at the moment.</span>
+                                                                    </div>
+                    <div class="tab-pane fade" id="jobs-notifications" role="tabpanel" aria-labelledby="jobs-notifications-tab">
+                                                    <span class="notification text-center">You don't have any notifications at the moment.</span>
+                                                                    </div>
+                    <div class="tab-pane fade show active" id="other-notifications" role="tabpanel" aria-labelledby="other-notifications-tab">
+                                                    <span class="notification text-center">You don't have any notifications at the moment.</span>
+                                                                    </div>
+                </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown navbar__dropdown navbar__logs logs-dd">
+          <a class="nav-link" href="#" data-toggle="dropdown"
+            data-tippy="true"
+            data-tippy-content="view logs"
+          >
+            <i class="fas fa-history"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right custom-scrollbar-css">
+                                      <div class="dropdown-item d-block">
+                                  <span class="logs-dd__desc">You created an account - Welcome to SproutGigs!</span>
+                                <br>
+                <span class="logs-dd__time">Oct 20, 2024 at 16:34</span>
+              </div>
+                                      <div class="see-all w-100 text-center pt-2 pb-2">
+                <a href="/user-history.html#log-tab">See all</a>
+              </div>
+                      </div>
+        </li>
+      </ul>
+
+      <button class="navbar-toggler ml-3" type="button" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+              </button>
+
+      <ul class="d-none d-lg-block nav align-items-center navbar-nav-2">
+        <li class="nav-item navbar-nav__profile profile-dropdown dropdown dropdown-stick">
+          <a class="nav-link" href="#" data-toggle="dropdown" data-tippy="true" data-tippy-content="profile">
+            <div class="d-flex align-items-center flex-nowrap">
+              <img src="/assets/images/profile_no_image.gif" alt="alihusnain_dev">
+            </div>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <span class="profile-dropdown__name">Hello, alihusnain_dev</span>
+            <span class="dropdown-hr mt-0"></span>
+            <a class="dropdown-item" href="/account.html">Account Settings</a>
+            <a class="dropdown-item" href="/u/alihusnain_dev">My Profile</a>
+            <a class="dropdown-item" href="/ranks.html">MicroJobs Ranking</a>
+            <a class="dropdown-item" href="/ranks-gigs.html">Gigs Ranking</a>
+            <a class="dropdown-item" href="/faq.html">FAQ</a>
+            <a class="dropdown-item" href="/faq.html#our-rules">Rules</a>
+            <a class="dropdown-item" href="/account.html#programs-offers">Share &amp; Earn</a>
+            <a class="dropdown-item" href="/auth/logout.html">Logout</a>
+          </div>
+        </li>
+      </ul>
+      <div class="setting-toggle navbar__dark-mode d-none d-sm-block" data-setting-toggle="darkmode">
+        <input type="checkbox" id="darkModeNavToggle" class="toggle__input" checked="checked">
+        <label for="darkModeNavToggle" class="text-gray p-2 mb-0 setting-toggle__label-enable align-items-center d-none"
+          data-tippy="true"
+          data-tippy-content="dark mode"
+        >
+          <i class="fas fa-moon"></i>
+        </label>
+        <label for="darkModeNavToggle" class="text-gray p-2 mb-0 setting-toggle__label-disable align-items-center"
+          data-tippy="true"
+          data-tippy-content="light mode"
+        >
+          <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 8.467 8.467"><path d="M 15.988281 0.98242188 A 1.0001 1.0001 0 0 0 15.886719 0.98828125 A 1.0001 1.0001 0 0 0 15 2 L 15 6.0019531 A 1.0002461 1.0002461 0 1 0 17 6.0019531 L 17 2 A 1.0001 1.0001 0 0 0 15.988281 0.98242188 z M 6.0898438 5.0878906 A 1.0001 1.0001 0 0 0 5.9863281 5.09375 A 1.0001 1.0001 0 0 0 5.3964844 6.8066406 L 8.2226562 9.6328125 A 1.0001 1.0001 0 1 0 9.6328125 8.2226562 L 6.8066406 5.3964844 A 1.0001 1.0001 0 0 0 6.0898438 5.0878906 z M 25.880859 5.09375 A 1.0001 1.0001 0 0 0 25.195312 5.3964844 L 22.367188 8.2226562 A 1.0001 1.0001 0 1 0 23.777344 9.6328125 L 26.603516 6.8066406 A 1.0001 1.0001 0 0 0 25.880859 5.09375 z M 16 8 A 7.9999995 7.9999995 0 0 0 8 16 A 7.9999995 7.9999995 0 0 0 16 24 A 7.9999995 7.9999995 0 0 0 24 16 A 7.9999995 7.9999995 0 0 0 16 8 z M 2 15 A 1.000252 1.000252 0 1 0 2 17 L 6.0019531 17 A 1.000252 1.000252 0 1 0 6.0019531 15 L 2 15 z M 25.998047 15 A 1.000252 1.000252 0 1 0 25.998047 17 L 30 17 A 1.000252 1.000252 0 1 0 30 15 L 25.998047 15 z M 23.060547 22.058594 A 1.0001 1.0001 0 0 0 22.957031 22.064453 A 1.0001 1.0001 0 0 0 22.367188 23.777344 L 25.195312 26.603516 A 1.0001 1.0001 0 1 0 26.603516 25.193359 L 23.777344 22.367188 A 1.0001 1.0001 0 0 0 23.060547 22.058594 z M 8.9101562 22.064453 A 1.0001 1.0001 0 0 0 8.2226562 22.367188 L 5.3964844 25.193359 A 1.0001 1.0001 0 1 0 6.8066406 26.603516 L 9.6328125 23.777344 A 1.0001 1.0001 0 0 0 8.9101562 22.064453 z M 15.982422 24.986328 A 1.0001 1.0001 0 0 0 15 25.998047 L 15 30 A 1.0002461 1.0002461 0 1 0 17 30 L 17 25.998047 A 1.0001 1.0001 0 0 0 15.982422 24.986328 z " paint-order="fill markers stroke" transform="scale(.26458)"/></svg>
+        </label>
+      </div>
+                                                  <button type="button"
+                class="d-none d-lg-block btn btn-primary btn-md navbar__post-job ml-4 disabled"
+                data-tippy="true"
+                data-tippy-content='&lt;h4&gt;Missing profile info&lt;/h4&gt;&lt;p&gt;Please provide your profile link on external freelancing websites (subject to admin approval) or become an advanced user to start posting gigs. &lt;a href=&quot;/account.html&quot;&gt;Go to Account Settings &gt; Settings&lt;/a&gt;&lt;/p&gt;'
+                data-tippy-placement="left-start"
+                data-tippy-trigger="mouseenter focus focusin click"
+                data-tippy-interactive="true"
+                data-tippy-theme="training"
+                data-tippy-maxwidth="265"
+                >
+                <span>POST GIG</span>
+              </button>
+                                        </div>
+  </div>
+</nav>
+
+<div class="site-notice">
+  <div class="container-fluid container-fluid--max">
+    <div class="row align-items-center">
+      <div class="col-sm-5 mb-2 mb-sm-0">
+        <a href="/api/documentation.html">API</a>
+        <span class="mx-1">|</span>
+        <a href="/account.html#programs-offers">Refer a Friend</a>
+                  <span class="mx-1">|</span>
+          <a href="/surveys-offers.html?s=cpx" class="text-primary" data-toggle="modal" data-target="#hdr-cpx"><b>
+          Paid Surveys  (2)          </b></a>
+              </div>
+      <div class="col-sm-7 d-flex align-items-center justify-content-sm-end flex-wrap">
+                  <div class="mb-0 mr-5 d-flex justify-content-center">
+            <strong class="mr-2">Earned:</strong>
+            <a href="/worker.html?filter=SATISFIED">
+              <span id="earned-balance">$0.0000</span>
+            </a>
+          </div>
+          <div class="mb-0 mr-5 d-flex justify-content-center">
+            <strong class="mr-2">Pending:</strong>
+            <a href="/worker.html?filter=PENDING">
+              <span>$0.0000</span>
+            </a>
+          </div>
+          <div class="mb-0 d-flex justify-content-center" data-tippy="true" data-tippy-content="The submit tasks interval is the time in seconds you have to wait between completing tasks. New freelancers start with 180 seconds. Not satisfied rated tasks gain a 20 second penalty, and system blocked spam proofs gain a 60 second penalty. Each satisfied task reduces the timer 10 seconds. Your task interval timer must be zero to withdraw. Higher level freelancers earn a buffer.">
+            <strong class="mr-1"><i class="far fa-clock align-middle"></i></strong>
+            <span id="earned-balance">180s</span>
+          </div>
+                      </div>
+    </div>
+  </div>
+</div>
+
+<div class="side-nav">
+  <div class="side-nav__inner">
+    <div class="side-nav__header d-flex align-items-center justify-content-between p-0">
+      <ul class="nav align-items-center navbar-nav-2">
+        <li class="nav-item navbar-nav__profile">
+          <a class="nav-link" href="#">
+            <div class="d-flex align-items-center flex-nowrap">
+              <img src="/assets/images/profile_no_image.gif" alt="alihusnain_dev" class="mr-3">
+              <span>Hello, alihusnain_dev</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <button class="navbar-btn--close btn btn-link ml-auto mr-0 p-4"><i class="sg-icon sg-icon-cross-2"></i></button>
+    </div>
+    <div class="side-nav__body">
+      <div class="nav flex-column pt-1">
+        <li class="nav-item">
+                      <a class="nav-link switch-profile-text d-flex align-items-center flex-nowrap" href="#" data-change-profile-to="employer">
+              <span>buyer</span>
+              <div class="zawp-toggle zawp-toggle--checked-last not-functional mx-2"><span class="zawp-toggle__switch m-0"></span></div>
+              <span>freelancer</span>
+            </a>
+                  </li>
+      </div>
+      <ul class="nav flex-column pt-3">
+                  <li class="nav-item position-relative" id="gigs-menu" style="width: fit-content;">
+            <div class="list-group">
+              <a href="#gigs-submenu" class="nav-link list-group-header border-0 pt-0" data-toggle="collapse" data-parent="#gigs-menu" >
+                Gigs<i class="fa fa-caret-down mx-2"></i>
+                              </a>
+              <div class="collapse" id="gigs-submenu">
+                <a class="ml-2 list-group-item small text-body border-0" href="/browse-gigs.html">Browse Gigs</a>
+                                  <a class="ml-2 list-group-item small text-body border-0 pt-0" href="/seller/gig-requests.html">Browse Gig Requests</a>
+                  <a class="ml-2 list-group-item small text-body border-0 pt-0" href="/seller/posted-gigs.html">My Posted Gigs</a>
+                  <a
+                    class="ml-2 list-group-item small text-body border-0 pt-0"
+                    href="/seller/gig-orders.html"
+                    style="width: fit-content;"
+                                      >
+                    My Gig Orders
+                                      </a>
+                  <a class="ml-2 list-group-item small text-body border-0 pt-0" href="/seller/post-gig.html">Post Gig</a>
+                              </div>
+            </div>
+          </li>
+        
+                  <li class="nav-item position-relative" id="microjobs-menu" style="width: fit-content;">
+            <div class="list-group">
+              <a href="#microjobs-submenu" class="nav-link list-group-header border-0 pt-0" data-toggle="collapse" data-parent="#microjobs-menu" >
+                MicroJobs<i class="fa fa-caret-down mx-2"></i>
+              </a>
+                          <div class="collapse" id="microjobs-submenu">
+                <a class="ml-2 list-group-item small text-body border-0" href="/jobs.html">Find Jobs</a>
+                <a class="ml-2 list-group-item small text-body border-0" href="/worker.html">Finished Tasks <span class="badge badge-primary ml-2">0</span></a>
+                <span class="ml-2 list-group-item small text-gray border-0 font-italic">satisfied + paid <span class="badge badge-primary ml-2">0</span></span>
+                <span class="ml-2 list-group-item small text-gray border-0 font-italic">pending review <span class="badge badge-primary ml-2">0</span></span>
+              </div>
+                        </div>
+          </li>
+        
+                  <li class="nav-item position-relative" id="surveys-offers-menu" style="width: fit-content;">
+            <div class="list-group">
+              <a href="#surveys-offers-submenu" class="nav-link list-group-header border-0 pt-0" data-toggle="collapse" data-parent="#surveys-offers-menu" >
+                Surveys &amp; Offers<i class="fa fa-caret-down mx-2"><sup class="symbol symbol--warning pb-0 ml-1">New</sup></i>
+              </a>
+            <div class="collapse" id="surveys-offers-submenu">
+                <a class="ml-2 list-group-item small text-body border-0" href="/surveys-offers.html">Browse Surveys &amp; Offers</a>
+                <a class="ml-2 list-group-item small text-body border-0" href="/my-surveys-offers.html">My Surveys &amp; Offers</span></a>
+            </div>
+          </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/wallet.html">Wallet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/account.html">Account Settings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ranks.html">MicroJobs Ranking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ranks-gigs.html">Gigs Ranking</a>
+        </li>
+        <li class="nav-item position-relative">
+          <a class="nav-link" href="/tickets.html">Support Tickets</a>
+                  </li>
+        <li class="nav-item position-relative">
+          <a class="nav-link notificationDropdown" href="/user-history.html">Notifications</a>
+                  </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/user-history.html#log-tab">Logs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/faq.html#our-rules">Rules</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/account.html#programs-offers">Share &amp; Earn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/auth/logout.html">Logout</a>
+        </li>
+      </ul>
+    </div>
+    <div class="side-nav__footer">
+                                                  <button type="button"
+                class="btn btn-with-icon btn-primary ttu btn-lg disabled"
+                data-tippy="true"
+                data-tippy-content='&lt;h4&gt;Missing profile info&lt;/h4&gt;&lt;p&gt;Please provide your profile link on external freelancing websites (subject to admin approval) or become an advanced user to start posting gigs. &lt;a href=&quot;/account.html&quot;&gt;Go to Account Settings &gt; Settings&lt;/a&gt;&lt;/p&gt;'
+                data-tippy-placement="left-start"
+                data-tippy-trigger="mouseenter focus focusin click"
+                data-tippy-interactive="true"
+                data-tippy-theme="training"
+                data-tippy-maxwidth="265"
+                >
+                <span>POST GIG</span>
+              </button>
+                                        </div>
+  </div>
+</div>
+
+<div class="modal share-gig-modal fade" tabindex="-1" id="hdr-cpx" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title pl-4">CPX Research</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pt-0">
+        <div>
+          <iframe id="hdr-cpx-iframe" data-src="https://offers.cpx-research.com/index.html?app_id=7858&amp;ext_user_id=2bbff89f&amp;secure_hash=37cee45eee14626c34f9b6702d82b9af&amp;username=alihusnain_dev&amp;email=alihusnain@finjineers.com&amp;subid_1=&amp;subid_2=&amp;main_info=true&amp;birthday_day=30&amp;birthday_month=11&amp;birthday_year=0001&amp;gender=m&amp;user_country_code=pk&amp;zip_code=1234" style="width:100%; height:800px; border:0; padding:0; margin:0;" scrolling="yes" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  jQuery(document).ready(function() {
+    jQuery("#hdr-cpx").on('shown.bs.modal', function() {
+      jQuery('#hdr-cpx iframe').attr('src', jQuery('#hdr-cpx iframe').attr('data-src') );
+    });
+  });
+</script>
+
+                                <div class="mb-0 rounded-0 pw-banner align-items-center" style="display: none;"></div>
+
+                <div class="site-alerts">
+  <div class="container-fluid container-fluid--max">
+    
+    
+    
+            <div class="alert alert-with-icon pw-badge-warning alert-dismissible fade show font-weight-medium mt-3" role="alert">
+          <i class="svg-icon-emergency-green alert-icon"></i>
+          Improve your account security. Add a recovery email now to ensure uninterrupted access to your account. Safeguard your account in case you lose access to your main email. <a href="/account.html#security" class="text-warning">Go to Account Settings > Security</a>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+    
+    
+    
+    
+      </div>
+</div>
+
+              
+            <div class="main">  <div class="container-fluid container-fluid--max py-7">
+    <div class="page-header page-header--gigs d-flex align-items-center justify-content-between mb-5">
+      <h3 class="headline h1 mb-0">Browse Gig Requests</h3>
+    </div>
+    
+    <ul class="nav nav--style-1 mb-2">
+      <li class="nav-item">
+        <a class="nav-link active" href="/seller/gig-requests.html">Gig Requests</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/seller/gig-requests-responses.html">My Responses</a>
+      </li>
+    </ul>
+    <p class="mb-5">You can choose and send your candidacy for several requests</p>
+
+    <div class="results-bar results-bar--gigs align-items-center justify-content-center justify-content-md-between" data-filter-bar="gigs">
+    <div class="row justify-content-between mr-0">
+        <div class="col-md-auto mb-6">
+            <div class="page-filters page-filters--select-gigs mb-0 mr-4">
+                <div class="page-filter page-filters__item dropdown dropdown-multiple" data-gig-filter="category" data-filter-url="/seller/gig-requests.html">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownGigCategory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-placeholder="Category">
+                                        <span>Category</span>
+                                    </a>
+                <div class="page-filter__menu dropdown-menu" aria-labelledby="dropdownGigCategory">
+                    <div class="dropdown-content" data-simplebar style="max-height: 250px;">
+                    <div class="page-filter__options">
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory05" class="custom-control-input" value="05">
+                                                        <label for="pageFiltersCategory05" class="custom-control-label">Architecture and Interior Design</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory02" class="custom-control-input" value="02">
+                                                        <label for="pageFiltersCategory02" class="custom-control-label">Artificial Intelligence</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory15" class="custom-control-input" value="15">
+                                                        <label for="pageFiltersCategory15" class="custom-control-label">Convert Files</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory20" class="custom-control-input" value="20">
+                                                        <label for="pageFiltersCategory20" class="custom-control-label">Digital Marketing</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory23" class="custom-control-input" value="23">
+                                                        <label for="pageFiltersCategory23" class="custom-control-label">Digital Writing</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory24" class="custom-control-input" value="24">
+                                                        <label for="pageFiltersCategory24" class="custom-control-label">E-Learning Content</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory26" class="custom-control-input" value="26">
+                                                        <label for="pageFiltersCategory26" class="custom-control-label">Financial &amp; Business Consulting</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory30" class="custom-control-input" value="30">
+                                                        <label for="pageFiltersCategory30" class="custom-control-label">Graphic Design</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory45" class="custom-control-input" value="45">
+                                                        <label for="pageFiltersCategory45" class="custom-control-label">Legal Consulting</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory50" class="custom-control-input" value="50">
+                                                        <label for="pageFiltersCategory50" class="custom-control-label">Lifestyle</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory55" class="custom-control-input" value="55">
+                                                        <label for="pageFiltersCategory55" class="custom-control-label">Marketplace</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory60" class="custom-control-input" value="60">
+                                                        <label for="pageFiltersCategory60" class="custom-control-label">Mobile Apps</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory62" class="custom-control-input" value="62">
+                                                        <label for="pageFiltersCategory62" class="custom-control-label">Music</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory63" class="custom-control-input" value="63">
+                                                        <label for="pageFiltersCategory63" class="custom-control-label">Music Promotion</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory66" class="custom-control-input" value="66">
+                                                        <label for="pageFiltersCategory66" class="custom-control-label">Online Instruction/Coaching</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory69" class="custom-control-input" value="69">
+                                                        <label for="pageFiltersCategory69" class="custom-control-label">Packaging &amp; Label Design</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory75" class="custom-control-input" value="75">
+                                                        <label for="pageFiltersCategory75" class="custom-control-label">Photo &amp; Video</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory73" class="custom-control-input" value="73">
+                                                        <label for="pageFiltersCategory73" class="custom-control-label">Presentation</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory71" class="custom-control-input" value="71">
+                                                        <label for="pageFiltersCategory71" class="custom-control-label">Press Releases</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory36" class="custom-control-input" value="36">
+                                                        <label for="pageFiltersCategory36" class="custom-control-label">Squarespace Templates</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory95" class="custom-control-input" value="95">
+                                                        <label for="pageFiltersCategory95" class="custom-control-label">Telemarketing</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory81" class="custom-control-input" value="81">
+                                                        <label for="pageFiltersCategory81" class="custom-control-label">Transcription</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory84" class="custom-control-input" value="84">
+                                                        <label for="pageFiltersCategory84" class="custom-control-label">Voice over</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory35" class="custom-control-input" value="35">
+                                                        <label for="pageFiltersCategory35" class="custom-control-label">Web Design</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory40" class="custom-control-input" value="40">
+                                                        <label for="pageFiltersCategory40" class="custom-control-label">Web Development</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory87" class="custom-control-input" value="87">
+                                                        <label for="pageFiltersCategory87" class="custom-control-label">Web Programming</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-radio">
+                                                        <input type="radio" name="category" id="pageFiltersCategory90" class="custom-control-input" value="90">
+                                                        <label for="pageFiltersCategory90" class="custom-control-label">White Board &amp; Animated Explainers</label>
+                        </div>
+                                            </div>
+                    </div>
+                    <div class="page-filter__menu-footer dropdown-footer">
+                    <button class="btn btn-gray" data-gig-filter-action="close">CLEAR</button>
+                    <button class="btn btn-primary" data-gig-filter-action="apply">APPLY</button>
+                    </div>
+                </div>
+                </div>
+                <div class="page-filter page-filters__item dropdown dropdown-multiple" data-gig-filter="sub-category">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownSubCategory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-placeholder="Subcategory">
+                                        <span>Subcategory</span>
+                                    </a>
+                <div class="page-filter__menu dropdown-menu" aria-labelledby="dropdownSubCategory">
+                    <div class="dropdown-content" data-simplebar style="max-height: 250px;">
+                    <div class="page-filter__options">
+                                                <p class="mb-0">Please select a category first</p>
+                                            </div>
+                    </div>
+                    <div class="page-filter__menu-footer dropdown-footer">
+                    <button class="btn btn-gray" data-gig-filter-action="close">CLEAR</button>
+                    <button class="btn btn-primary" data-gig-filter-action="apply">APPLY</button>
+                    </div>
+                </div>
+                </div>
+                <div class="page-filter page-filters__item dropdown dropdown-multiple" data-gig-filter="location">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownLocation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-placeholder="Location">
+                                        <span>Location</span>
+                                    </a>
+                <div class="page-filter__menu dropdown-menu" aria-labelledby="dropdownLocation">
+                    <div class="dropdown-content" data-simplebar style="max-height: 250px;">
+                    <div class="page-filter__options two-cols">
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryaf" class="custom-control-input" value="af">
+                                                        <label for="pageFiltersSubCategoryaf" class="custom-control-label">Afghanistan</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryax" class="custom-control-input" value="ax">
+                                                        <label for="pageFiltersSubCategoryax" class="custom-control-label">Aland Islands</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryal" class="custom-control-input" value="al">
+                                                        <label for="pageFiltersSubCategoryal" class="custom-control-label">Albania</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorydz" class="custom-control-input" value="dz">
+                                                        <label for="pageFiltersSubCategorydz" class="custom-control-label">Algeria</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryas" class="custom-control-input" value="as">
+                                                        <label for="pageFiltersSubCategoryas" class="custom-control-label">American Samoa</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryad" class="custom-control-input" value="ad">
+                                                        <label for="pageFiltersSubCategoryad" class="custom-control-label">Andorra</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryao" class="custom-control-input" value="ao">
+                                                        <label for="pageFiltersSubCategoryao" class="custom-control-label">Angola</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryai" class="custom-control-input" value="ai">
+                                                        <label for="pageFiltersSubCategoryai" class="custom-control-label">Anguilla</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryaq" class="custom-control-input" value="aq">
+                                                        <label for="pageFiltersSubCategoryaq" class="custom-control-label">Antarctica</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryag" class="custom-control-input" value="ag">
+                                                        <label for="pageFiltersSubCategoryag" class="custom-control-label">Antigua and Barbuda</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryar" class="custom-control-input" value="ar">
+                                                        <label for="pageFiltersSubCategoryar" class="custom-control-label">Argentina</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryam" class="custom-control-input" value="am">
+                                                        <label for="pageFiltersSubCategoryam" class="custom-control-label">Armenia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryaw" class="custom-control-input" value="aw">
+                                                        <label for="pageFiltersSubCategoryaw" class="custom-control-label">Aruba</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryap" class="custom-control-input" value="ap">
+                                                        <label for="pageFiltersSubCategoryap" class="custom-control-label">Asia/Pacific Region</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryau" class="custom-control-input" value="au">
+                                                        <label for="pageFiltersSubCategoryau" class="custom-control-label">Australia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryat" class="custom-control-input" value="at">
+                                                        <label for="pageFiltersSubCategoryat" class="custom-control-label">Austria</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryaz" class="custom-control-input" value="az">
+                                                        <label for="pageFiltersSubCategoryaz" class="custom-control-label">Azerbaijan</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybs" class="custom-control-input" value="bs">
+                                                        <label for="pageFiltersSubCategorybs" class="custom-control-label">Bahamas</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybh" class="custom-control-input" value="bh">
+                                                        <label for="pageFiltersSubCategorybh" class="custom-control-label">Bahrain</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybd" class="custom-control-input" value="bd">
+                                                        <label for="pageFiltersSubCategorybd" class="custom-control-label">Bangladesh</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybb" class="custom-control-input" value="bb">
+                                                        <label for="pageFiltersSubCategorybb" class="custom-control-label">Barbados</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryby" class="custom-control-input" value="by">
+                                                        <label for="pageFiltersSubCategoryby" class="custom-control-label">Belarus</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybe" class="custom-control-input" value="be">
+                                                        <label for="pageFiltersSubCategorybe" class="custom-control-label">Belgium</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybz" class="custom-control-input" value="bz">
+                                                        <label for="pageFiltersSubCategorybz" class="custom-control-label">Belize</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybj" class="custom-control-input" value="bj">
+                                                        <label for="pageFiltersSubCategorybj" class="custom-control-label">Benin</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybm" class="custom-control-input" value="bm">
+                                                        <label for="pageFiltersSubCategorybm" class="custom-control-label">Bermuda</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybt" class="custom-control-input" value="bt">
+                                                        <label for="pageFiltersSubCategorybt" class="custom-control-label">Bhutan</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybo" class="custom-control-input" value="bo">
+                                                        <label for="pageFiltersSubCategorybo" class="custom-control-label">Bolivia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybq" class="custom-control-input" value="bq">
+                                                        <label for="pageFiltersSubCategorybq" class="custom-control-label">Bonaire, Saint Eustatius and Saba</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryba" class="custom-control-input" value="ba">
+                                                        <label for="pageFiltersSubCategoryba" class="custom-control-label">Bosnia and Herzegovina</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybw" class="custom-control-input" value="bw">
+                                                        <label for="pageFiltersSubCategorybw" class="custom-control-label">Botswana</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybr" class="custom-control-input" value="br">
+                                                        <label for="pageFiltersSubCategorybr" class="custom-control-label">Brazil</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryio" class="custom-control-input" value="io">
+                                                        <label for="pageFiltersSubCategoryio" class="custom-control-label">British Indian Ocean Territory</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybn" class="custom-control-input" value="bn">
+                                                        <label for="pageFiltersSubCategorybn" class="custom-control-label">Brunei Darussalam</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybg" class="custom-control-input" value="bg">
+                                                        <label for="pageFiltersSubCategorybg" class="custom-control-label">Bulgaria</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybf" class="custom-control-input" value="bf">
+                                                        <label for="pageFiltersSubCategorybf" class="custom-control-label">Burkina Faso</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybi" class="custom-control-input" value="bi">
+                                                        <label for="pageFiltersSubCategorybi" class="custom-control-label">Burundi</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorykh" class="custom-control-input" value="kh">
+                                                        <label for="pageFiltersSubCategorykh" class="custom-control-label">Cambodia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorycm" class="custom-control-input" value="cm">
+                                                        <label for="pageFiltersSubCategorycm" class="custom-control-label">Cameroon</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryca" class="custom-control-input" value="ca">
+                                                        <label for="pageFiltersSubCategoryca" class="custom-control-label">Canada</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorycv" class="custom-control-input" value="cv">
+                                                        <label for="pageFiltersSubCategorycv" class="custom-control-label">Cape Verde</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryky" class="custom-control-input" value="ky">
+                                                        <label for="pageFiltersSubCategoryky" class="custom-control-label">Cayman Islands</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorycf" class="custom-control-input" value="cf">
+                                                        <label for="pageFiltersSubCategorycf" class="custom-control-label">Central African Republic</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorytd" class="custom-control-input" value="td">
+                                                        <label for="pageFiltersSubCategorytd" class="custom-control-label">Chad</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorycl" class="custom-control-input" value="cl">
+                                                        <label for="pageFiltersSubCategorycl" class="custom-control-label">Chile</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorycn" class="custom-control-input" value="cn">
+                                                        <label for="pageFiltersSubCategorycn" class="custom-control-label">China</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorycx" class="custom-control-input" value="cx">
+                                                        <label for="pageFiltersSubCategorycx" class="custom-control-label">Christmas Island</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorycc" class="custom-control-input" value="cc">
+                                                        <label for="pageFiltersSubCategorycc" class="custom-control-label">Cocos (Keeling) Islands</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryco" class="custom-control-input" value="co">
+                                                        <label for="pageFiltersSubCategoryco" class="custom-control-label">Colombia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorykm" class="custom-control-input" value="km">
+                                                        <label for="pageFiltersSubCategorykm" class="custom-control-label">Comoros</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorycg" class="custom-control-input" value="cg">
+                                                        <label for="pageFiltersSubCategorycg" class="custom-control-label">Congo</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorycd" class="custom-control-input" value="cd">
+                                                        <label for="pageFiltersSubCategorycd" class="custom-control-label">Congo, The Democratic Republic of the</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryck" class="custom-control-input" value="ck">
+                                                        <label for="pageFiltersSubCategoryck" class="custom-control-label">Cook Islands</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorycr" class="custom-control-input" value="cr">
+                                                        <label for="pageFiltersSubCategorycr" class="custom-control-label">Costa Rica</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryci" class="custom-control-input" value="ci">
+                                                        <label for="pageFiltersSubCategoryci" class="custom-control-label">Cote D&#039;Ivoire</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryhr" class="custom-control-input" value="hr">
+                                                        <label for="pageFiltersSubCategoryhr" class="custom-control-label">Croatia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorycu" class="custom-control-input" value="cu">
+                                                        <label for="pageFiltersSubCategorycu" class="custom-control-label">Cuba</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorycw" class="custom-control-input" value="cw">
+                                                        <label for="pageFiltersSubCategorycw" class="custom-control-label">Curacao</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorycy" class="custom-control-input" value="cy">
+                                                        <label for="pageFiltersSubCategorycy" class="custom-control-label">Cyprus</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorycz" class="custom-control-input" value="cz">
+                                                        <label for="pageFiltersSubCategorycz" class="custom-control-label">Czech Republic</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorydk" class="custom-control-input" value="dk">
+                                                        <label for="pageFiltersSubCategorydk" class="custom-control-label">Denmark</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorydj" class="custom-control-input" value="dj">
+                                                        <label for="pageFiltersSubCategorydj" class="custom-control-label">Djibouti</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorydm" class="custom-control-input" value="dm">
+                                                        <label for="pageFiltersSubCategorydm" class="custom-control-label">Dominica</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorydo" class="custom-control-input" value="do">
+                                                        <label for="pageFiltersSubCategorydo" class="custom-control-label">Dominican Republic</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryec" class="custom-control-input" value="ec">
+                                                        <label for="pageFiltersSubCategoryec" class="custom-control-label">Ecuador</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryeg" class="custom-control-input" value="eg">
+                                                        <label for="pageFiltersSubCategoryeg" class="custom-control-label">Egypt</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysv" class="custom-control-input" value="sv">
+                                                        <label for="pageFiltersSubCategorysv" class="custom-control-label">El Salvador</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygq" class="custom-control-input" value="gq">
+                                                        <label for="pageFiltersSubCategorygq" class="custom-control-label">Equatorial Guinea</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryer" class="custom-control-input" value="er">
+                                                        <label for="pageFiltersSubCategoryer" class="custom-control-label">Eritrea</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryee" class="custom-control-input" value="ee">
+                                                        <label for="pageFiltersSubCategoryee" class="custom-control-label">Estonia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryet" class="custom-control-input" value="et">
+                                                        <label for="pageFiltersSubCategoryet" class="custom-control-label">Ethiopia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryeu" class="custom-control-input" value="eu">
+                                                        <label for="pageFiltersSubCategoryeu" class="custom-control-label">Europe</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryfk" class="custom-control-input" value="fk">
+                                                        <label for="pageFiltersSubCategoryfk" class="custom-control-label">Falkland Islands (Malvinas)</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryfo" class="custom-control-input" value="fo">
+                                                        <label for="pageFiltersSubCategoryfo" class="custom-control-label">Faroe Islands</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryfj" class="custom-control-input" value="fj">
+                                                        <label for="pageFiltersSubCategoryfj" class="custom-control-label">Fiji</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryfi" class="custom-control-input" value="fi">
+                                                        <label for="pageFiltersSubCategoryfi" class="custom-control-label">Finland</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryfr" class="custom-control-input" value="fr">
+                                                        <label for="pageFiltersSubCategoryfr" class="custom-control-label">France</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygf" class="custom-control-input" value="gf">
+                                                        <label for="pageFiltersSubCategorygf" class="custom-control-label">French Guiana</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorypf" class="custom-control-input" value="pf">
+                                                        <label for="pageFiltersSubCategorypf" class="custom-control-label">French Polynesia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorytf" class="custom-control-input" value="tf">
+                                                        <label for="pageFiltersSubCategorytf" class="custom-control-label">French Southern Territories</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryga" class="custom-control-input" value="ga">
+                                                        <label for="pageFiltersSubCategoryga" class="custom-control-label">Gabon</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygm" class="custom-control-input" value="gm">
+                                                        <label for="pageFiltersSubCategorygm" class="custom-control-label">Gambia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryge" class="custom-control-input" value="ge">
+                                                        <label for="pageFiltersSubCategoryge" class="custom-control-label">Georgia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryde" class="custom-control-input" value="de">
+                                                        <label for="pageFiltersSubCategoryde" class="custom-control-label">Germany</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygh" class="custom-control-input" value="gh">
+                                                        <label for="pageFiltersSubCategorygh" class="custom-control-label">Ghana</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygi" class="custom-control-input" value="gi">
+                                                        <label for="pageFiltersSubCategorygi" class="custom-control-label">Gibraltar</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygr" class="custom-control-input" value="gr">
+                                                        <label for="pageFiltersSubCategorygr" class="custom-control-label">Greece</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygl" class="custom-control-input" value="gl">
+                                                        <label for="pageFiltersSubCategorygl" class="custom-control-label">Greenland</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygd" class="custom-control-input" value="gd">
+                                                        <label for="pageFiltersSubCategorygd" class="custom-control-label">Grenada</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygp" class="custom-control-input" value="gp">
+                                                        <label for="pageFiltersSubCategorygp" class="custom-control-label">Guadeloupe</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygu" class="custom-control-input" value="gu">
+                                                        <label for="pageFiltersSubCategorygu" class="custom-control-label">Guam</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygt" class="custom-control-input" value="gt">
+                                                        <label for="pageFiltersSubCategorygt" class="custom-control-label">Guatemala</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygg" class="custom-control-input" value="gg">
+                                                        <label for="pageFiltersSubCategorygg" class="custom-control-label">Guernsey</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygn" class="custom-control-input" value="gn">
+                                                        <label for="pageFiltersSubCategorygn" class="custom-control-label">Guinea</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygw" class="custom-control-input" value="gw">
+                                                        <label for="pageFiltersSubCategorygw" class="custom-control-label">Guinea-Bissau</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygy" class="custom-control-input" value="gy">
+                                                        <label for="pageFiltersSubCategorygy" class="custom-control-label">Guyana</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryht" class="custom-control-input" value="ht">
+                                                        <label for="pageFiltersSubCategoryht" class="custom-control-label">Haiti</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryva" class="custom-control-input" value="va">
+                                                        <label for="pageFiltersSubCategoryva" class="custom-control-label">Holy See (Vatican City State)</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryhn" class="custom-control-input" value="hn">
+                                                        <label for="pageFiltersSubCategoryhn" class="custom-control-label">Honduras</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryhk" class="custom-control-input" value="hk">
+                                                        <label for="pageFiltersSubCategoryhk" class="custom-control-label">Hong Kong</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryhu" class="custom-control-input" value="hu">
+                                                        <label for="pageFiltersSubCategoryhu" class="custom-control-label">Hungary</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryis" class="custom-control-input" value="is">
+                                                        <label for="pageFiltersSubCategoryis" class="custom-control-label">Iceland</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryin" class="custom-control-input" value="in">
+                                                        <label for="pageFiltersSubCategoryin" class="custom-control-label">India</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryid" class="custom-control-input" value="id">
+                                                        <label for="pageFiltersSubCategoryid" class="custom-control-label">Indonesia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryir" class="custom-control-input" value="ir">
+                                                        <label for="pageFiltersSubCategoryir" class="custom-control-label">Iran, Islamic Republic of</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryiq" class="custom-control-input" value="iq">
+                                                        <label for="pageFiltersSubCategoryiq" class="custom-control-label">Iraq</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryie" class="custom-control-input" value="ie">
+                                                        <label for="pageFiltersSubCategoryie" class="custom-control-label">Ireland</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryim" class="custom-control-input" value="im">
+                                                        <label for="pageFiltersSubCategoryim" class="custom-control-label">Isle of Man</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryil" class="custom-control-input" value="il">
+                                                        <label for="pageFiltersSubCategoryil" class="custom-control-label">Israel</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryit" class="custom-control-input" value="it">
+                                                        <label for="pageFiltersSubCategoryit" class="custom-control-label">Italy</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryjm" class="custom-control-input" value="jm">
+                                                        <label for="pageFiltersSubCategoryjm" class="custom-control-label">Jamaica</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryjp" class="custom-control-input" value="jp">
+                                                        <label for="pageFiltersSubCategoryjp" class="custom-control-label">Japan</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryje" class="custom-control-input" value="je">
+                                                        <label for="pageFiltersSubCategoryje" class="custom-control-label">Jersey</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryjo" class="custom-control-input" value="jo">
+                                                        <label for="pageFiltersSubCategoryjo" class="custom-control-label">Jordan</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorykz" class="custom-control-input" value="kz">
+                                                        <label for="pageFiltersSubCategorykz" class="custom-control-label">Kazakhstan</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryke" class="custom-control-input" value="ke">
+                                                        <label for="pageFiltersSubCategoryke" class="custom-control-label">Kenya</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryki" class="custom-control-input" value="ki">
+                                                        <label for="pageFiltersSubCategoryki" class="custom-control-label">Kiribati</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorykp" class="custom-control-input" value="kp">
+                                                        <label for="pageFiltersSubCategorykp" class="custom-control-label">Korea, Democratic People&#039;s Republic of</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorykr" class="custom-control-input" value="kr">
+                                                        <label for="pageFiltersSubCategorykr" class="custom-control-label">Korea, Republic of</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryxk" class="custom-control-input" value="xk">
+                                                        <label for="pageFiltersSubCategoryxk" class="custom-control-label">Kosovo</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorykw" class="custom-control-input" value="kw">
+                                                        <label for="pageFiltersSubCategorykw" class="custom-control-label">Kuwait</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorykg" class="custom-control-input" value="kg">
+                                                        <label for="pageFiltersSubCategorykg" class="custom-control-label">Kyrgyzstan</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryla" class="custom-control-input" value="la">
+                                                        <label for="pageFiltersSubCategoryla" class="custom-control-label">Lao People&#039;s Democratic Republic</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorylv" class="custom-control-input" value="lv">
+                                                        <label for="pageFiltersSubCategorylv" class="custom-control-label">Latvia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorylb" class="custom-control-input" value="lb">
+                                                        <label for="pageFiltersSubCategorylb" class="custom-control-label">Lebanon</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryls" class="custom-control-input" value="ls">
+                                                        <label for="pageFiltersSubCategoryls" class="custom-control-label">Lesotho</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorylr" class="custom-control-input" value="lr">
+                                                        <label for="pageFiltersSubCategorylr" class="custom-control-label">Liberia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryly" class="custom-control-input" value="ly">
+                                                        <label for="pageFiltersSubCategoryly" class="custom-control-label">Libya</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryli" class="custom-control-input" value="li">
+                                                        <label for="pageFiltersSubCategoryli" class="custom-control-label">Liechtenstein</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorylt" class="custom-control-input" value="lt">
+                                                        <label for="pageFiltersSubCategorylt" class="custom-control-label">Lithuania</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorylu" class="custom-control-input" value="lu">
+                                                        <label for="pageFiltersSubCategorylu" class="custom-control-label">Luxembourg</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymo" class="custom-control-input" value="mo">
+                                                        <label for="pageFiltersSubCategorymo" class="custom-control-label">Macau</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymk" class="custom-control-input" value="mk">
+                                                        <label for="pageFiltersSubCategorymk" class="custom-control-label">Macedonia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymg" class="custom-control-input" value="mg">
+                                                        <label for="pageFiltersSubCategorymg" class="custom-control-label">Madagascar</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymw" class="custom-control-input" value="mw">
+                                                        <label for="pageFiltersSubCategorymw" class="custom-control-label">Malawi</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymy" class="custom-control-input" value="my">
+                                                        <label for="pageFiltersSubCategorymy" class="custom-control-label">Malaysia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymv" class="custom-control-input" value="mv">
+                                                        <label for="pageFiltersSubCategorymv" class="custom-control-label">Maldives</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryml" class="custom-control-input" value="ml">
+                                                        <label for="pageFiltersSubCategoryml" class="custom-control-label">Mali</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymt" class="custom-control-input" value="mt">
+                                                        <label for="pageFiltersSubCategorymt" class="custom-control-label">Malta</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymh" class="custom-control-input" value="mh">
+                                                        <label for="pageFiltersSubCategorymh" class="custom-control-label">Marshall Islands</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymq" class="custom-control-input" value="mq">
+                                                        <label for="pageFiltersSubCategorymq" class="custom-control-label">Martinique</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymr" class="custom-control-input" value="mr">
+                                                        <label for="pageFiltersSubCategorymr" class="custom-control-label">Mauritania</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymu" class="custom-control-input" value="mu">
+                                                        <label for="pageFiltersSubCategorymu" class="custom-control-label">Mauritius</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryyt" class="custom-control-input" value="yt">
+                                                        <label for="pageFiltersSubCategoryyt" class="custom-control-label">Mayotte</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymx" class="custom-control-input" value="mx">
+                                                        <label for="pageFiltersSubCategorymx" class="custom-control-label">Mexico</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryfm" class="custom-control-input" value="fm">
+                                                        <label for="pageFiltersSubCategoryfm" class="custom-control-label">Micronesia, Federated States of</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymd" class="custom-control-input" value="md">
+                                                        <label for="pageFiltersSubCategorymd" class="custom-control-label">Moldova, Republic of</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymc" class="custom-control-input" value="mc">
+                                                        <label for="pageFiltersSubCategorymc" class="custom-control-label">Monaco</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymn" class="custom-control-input" value="mn">
+                                                        <label for="pageFiltersSubCategorymn" class="custom-control-label">Mongolia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryme" class="custom-control-input" value="me">
+                                                        <label for="pageFiltersSubCategoryme" class="custom-control-label">Montenegro</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryms" class="custom-control-input" value="ms">
+                                                        <label for="pageFiltersSubCategoryms" class="custom-control-label">Montserrat</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryma" class="custom-control-input" value="ma">
+                                                        <label for="pageFiltersSubCategoryma" class="custom-control-label">Morocco</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymz" class="custom-control-input" value="mz">
+                                                        <label for="pageFiltersSubCategorymz" class="custom-control-label">Mozambique</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymm" class="custom-control-input" value="mm">
+                                                        <label for="pageFiltersSubCategorymm" class="custom-control-label">Myanmar</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryna" class="custom-control-input" value="na">
+                                                        <label for="pageFiltersSubCategoryna" class="custom-control-label">Namibia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorynr" class="custom-control-input" value="nr">
+                                                        <label for="pageFiltersSubCategorynr" class="custom-control-label">Nauru</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorynp" class="custom-control-input" value="np">
+                                                        <label for="pageFiltersSubCategorynp" class="custom-control-label">Nepal</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorynl" class="custom-control-input" value="nl">
+                                                        <label for="pageFiltersSubCategorynl" class="custom-control-label">Netherlands</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorync" class="custom-control-input" value="nc">
+                                                        <label for="pageFiltersSubCategorync" class="custom-control-label">New Caledonia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorynz" class="custom-control-input" value="nz">
+                                                        <label for="pageFiltersSubCategorynz" class="custom-control-label">New Zealand</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryni" class="custom-control-input" value="ni">
+                                                        <label for="pageFiltersSubCategoryni" class="custom-control-label">Nicaragua</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryne" class="custom-control-input" value="ne">
+                                                        <label for="pageFiltersSubCategoryne" class="custom-control-label">Niger</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryng" class="custom-control-input" value="ng">
+                                                        <label for="pageFiltersSubCategoryng" class="custom-control-label">Nigeria</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorynu" class="custom-control-input" value="nu">
+                                                        <label for="pageFiltersSubCategorynu" class="custom-control-label">Niue</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorynf" class="custom-control-input" value="nf">
+                                                        <label for="pageFiltersSubCategorynf" class="custom-control-label">Norfolk Island</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymp" class="custom-control-input" value="mp">
+                                                        <label for="pageFiltersSubCategorymp" class="custom-control-label">Northern Mariana Islands</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryno" class="custom-control-input" value="no">
+                                                        <label for="pageFiltersSubCategoryno" class="custom-control-label">Norway</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryom" class="custom-control-input" value="om">
+                                                        <label for="pageFiltersSubCategoryom" class="custom-control-label">Oman</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorypk" class="custom-control-input" value="pk">
+                                                        <label for="pageFiltersSubCategorypk" class="custom-control-label">Pakistan</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorypw" class="custom-control-input" value="pw">
+                                                        <label for="pageFiltersSubCategorypw" class="custom-control-label">Palau</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryps" class="custom-control-input" value="ps">
+                                                        <label for="pageFiltersSubCategoryps" class="custom-control-label">Palestinian Territory</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorypa" class="custom-control-input" value="pa">
+                                                        <label for="pageFiltersSubCategorypa" class="custom-control-label">Panama</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorypg" class="custom-control-input" value="pg">
+                                                        <label for="pageFiltersSubCategorypg" class="custom-control-label">Papua New Guinea</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorypy" class="custom-control-input" value="py">
+                                                        <label for="pageFiltersSubCategorypy" class="custom-control-label">Paraguay</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorype" class="custom-control-input" value="pe">
+                                                        <label for="pageFiltersSubCategorype" class="custom-control-label">Peru</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryph" class="custom-control-input" value="ph">
+                                                        <label for="pageFiltersSubCategoryph" class="custom-control-label">Philippines</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorypn" class="custom-control-input" value="pn">
+                                                        <label for="pageFiltersSubCategorypn" class="custom-control-label">Pitcairn Islands</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorypl" class="custom-control-input" value="pl">
+                                                        <label for="pageFiltersSubCategorypl" class="custom-control-label">Poland</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorypt" class="custom-control-input" value="pt">
+                                                        <label for="pageFiltersSubCategorypt" class="custom-control-label">Portugal</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorypr" class="custom-control-input" value="pr">
+                                                        <label for="pageFiltersSubCategorypr" class="custom-control-label">Puerto Rico</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryqa" class="custom-control-input" value="qa">
+                                                        <label for="pageFiltersSubCategoryqa" class="custom-control-label">Qatar</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryre" class="custom-control-input" value="re">
+                                                        <label for="pageFiltersSubCategoryre" class="custom-control-label">Reunion</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryro" class="custom-control-input" value="ro">
+                                                        <label for="pageFiltersSubCategoryro" class="custom-control-label">Romania</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryru" class="custom-control-input" value="ru">
+                                                        <label for="pageFiltersSubCategoryru" class="custom-control-label">Russian Federation</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryrw" class="custom-control-input" value="rw">
+                                                        <label for="pageFiltersSubCategoryrw" class="custom-control-label">Rwanda</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorybl" class="custom-control-input" value="bl">
+                                                        <label for="pageFiltersSubCategorybl" class="custom-control-label">Saint Barthelemy</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysh" class="custom-control-input" value="sh">
+                                                        <label for="pageFiltersSubCategorysh" class="custom-control-label">Saint Helena</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorykn" class="custom-control-input" value="kn">
+                                                        <label for="pageFiltersSubCategorykn" class="custom-control-label">Saint Kitts and Nevis</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorylc" class="custom-control-input" value="lc">
+                                                        <label for="pageFiltersSubCategorylc" class="custom-control-label">Saint Lucia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorymf" class="custom-control-input" value="mf">
+                                                        <label for="pageFiltersSubCategorymf" class="custom-control-label">Saint Martin</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorypm" class="custom-control-input" value="pm">
+                                                        <label for="pageFiltersSubCategorypm" class="custom-control-label">Saint Pierre and Miquelon</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryvc" class="custom-control-input" value="vc">
+                                                        <label for="pageFiltersSubCategoryvc" class="custom-control-label">Saint Vincent and the Grenadines</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryws" class="custom-control-input" value="ws">
+                                                        <label for="pageFiltersSubCategoryws" class="custom-control-label">Samoa</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysm" class="custom-control-input" value="sm">
+                                                        <label for="pageFiltersSubCategorysm" class="custom-control-label">San Marino</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryst" class="custom-control-input" value="st">
+                                                        <label for="pageFiltersSubCategoryst" class="custom-control-label">Sao Tome and Principe</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysa" class="custom-control-input" value="sa">
+                                                        <label for="pageFiltersSubCategorysa" class="custom-control-label">Saudi Arabia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysn" class="custom-control-input" value="sn">
+                                                        <label for="pageFiltersSubCategorysn" class="custom-control-label">Senegal</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryrs" class="custom-control-input" value="rs">
+                                                        <label for="pageFiltersSubCategoryrs" class="custom-control-label">Serbia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysc" class="custom-control-input" value="sc">
+                                                        <label for="pageFiltersSubCategorysc" class="custom-control-label">Seychelles</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysl" class="custom-control-input" value="sl">
+                                                        <label for="pageFiltersSubCategorysl" class="custom-control-label">Sierra Leone</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysg" class="custom-control-input" value="sg">
+                                                        <label for="pageFiltersSubCategorysg" class="custom-control-label">Singapore</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysx" class="custom-control-input" value="sx">
+                                                        <label for="pageFiltersSubCategorysx" class="custom-control-label">Sint Maarten (Dutch part)</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysk" class="custom-control-input" value="sk">
+                                                        <label for="pageFiltersSubCategorysk" class="custom-control-label">Slovakia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysi" class="custom-control-input" value="si">
+                                                        <label for="pageFiltersSubCategorysi" class="custom-control-label">Slovenia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysb" class="custom-control-input" value="sb">
+                                                        <label for="pageFiltersSubCategorysb" class="custom-control-label">Solomon Islands</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryso" class="custom-control-input" value="so">
+                                                        <label for="pageFiltersSubCategoryso" class="custom-control-label">Somalia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryza" class="custom-control-input" value="za">
+                                                        <label for="pageFiltersSubCategoryza" class="custom-control-label">South Africa</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorygs" class="custom-control-input" value="gs">
+                                                        <label for="pageFiltersSubCategorygs" class="custom-control-label">South Georgia and the South Sandwich Islands</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryss" class="custom-control-input" value="ss">
+                                                        <label for="pageFiltersSubCategoryss" class="custom-control-label">South Sudan</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryes" class="custom-control-input" value="es">
+                                                        <label for="pageFiltersSubCategoryes" class="custom-control-label">Spain</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorylk" class="custom-control-input" value="lk">
+                                                        <label for="pageFiltersSubCategorylk" class="custom-control-label">Sri Lanka</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysd" class="custom-control-input" value="sd">
+                                                        <label for="pageFiltersSubCategorysd" class="custom-control-label">Sudan</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysr" class="custom-control-input" value="sr">
+                                                        <label for="pageFiltersSubCategorysr" class="custom-control-label">Suriname</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysj" class="custom-control-input" value="sj">
+                                                        <label for="pageFiltersSubCategorysj" class="custom-control-label">Svalbard and Jan Mayen</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysz" class="custom-control-input" value="sz">
+                                                        <label for="pageFiltersSubCategorysz" class="custom-control-label">Swaziland</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryse" class="custom-control-input" value="se">
+                                                        <label for="pageFiltersSubCategoryse" class="custom-control-label">Sweden</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorych" class="custom-control-input" value="ch">
+                                                        <label for="pageFiltersSubCategorych" class="custom-control-label">Switzerland</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorysy" class="custom-control-input" value="sy">
+                                                        <label for="pageFiltersSubCategorysy" class="custom-control-label">Syrian Arab Republic</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorytw" class="custom-control-input" value="tw">
+                                                        <label for="pageFiltersSubCategorytw" class="custom-control-label">Taiwan</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorytj" class="custom-control-input" value="tj">
+                                                        <label for="pageFiltersSubCategorytj" class="custom-control-label">Tajikistan</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorytz" class="custom-control-input" value="tz">
+                                                        <label for="pageFiltersSubCategorytz" class="custom-control-label">Tanzania, United Republic of</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryth" class="custom-control-input" value="th">
+                                                        <label for="pageFiltersSubCategoryth" class="custom-control-label">Thailand</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorytl" class="custom-control-input" value="tl">
+                                                        <label for="pageFiltersSubCategorytl" class="custom-control-label">Timor-Leste</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorytg" class="custom-control-input" value="tg">
+                                                        <label for="pageFiltersSubCategorytg" class="custom-control-label">Togo</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorytk" class="custom-control-input" value="tk">
+                                                        <label for="pageFiltersSubCategorytk" class="custom-control-label">Tokelau</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryto" class="custom-control-input" value="to">
+                                                        <label for="pageFiltersSubCategoryto" class="custom-control-label">Tonga</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorytt" class="custom-control-input" value="tt">
+                                                        <label for="pageFiltersSubCategorytt" class="custom-control-label">Trinidad and Tobago</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorytn" class="custom-control-input" value="tn">
+                                                        <label for="pageFiltersSubCategorytn" class="custom-control-label">Tunisia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorytr" class="custom-control-input" value="tr">
+                                                        <label for="pageFiltersSubCategorytr" class="custom-control-label">Turkey</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorytm" class="custom-control-input" value="tm">
+                                                        <label for="pageFiltersSubCategorytm" class="custom-control-label">Turkmenistan</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorytc" class="custom-control-input" value="tc">
+                                                        <label for="pageFiltersSubCategorytc" class="custom-control-label">Turks and Caicos Islands</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorytv" class="custom-control-input" value="tv">
+                                                        <label for="pageFiltersSubCategorytv" class="custom-control-label">Tuvalu</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryug" class="custom-control-input" value="ug">
+                                                        <label for="pageFiltersSubCategoryug" class="custom-control-label">Uganda</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryua" class="custom-control-input" value="ua">
+                                                        <label for="pageFiltersSubCategoryua" class="custom-control-label">Ukraine</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryae" class="custom-control-input" value="ae">
+                                                        <label for="pageFiltersSubCategoryae" class="custom-control-label">United Arab Emirates</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryuk" class="custom-control-input" value="uk">
+                                                        <label for="pageFiltersSubCategoryuk" class="custom-control-label">United Kingdom</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryus" class="custom-control-input" value="us">
+                                                        <label for="pageFiltersSubCategoryus" class="custom-control-label">United States</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryum" class="custom-control-input" value="um">
+                                                        <label for="pageFiltersSubCategoryum" class="custom-control-label">United States Minor Outlying Islands</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryuy" class="custom-control-input" value="uy">
+                                                        <label for="pageFiltersSubCategoryuy" class="custom-control-label">Uruguay</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryuz" class="custom-control-input" value="uz">
+                                                        <label for="pageFiltersSubCategoryuz" class="custom-control-label">Uzbekistan</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryvu" class="custom-control-input" value="vu">
+                                                        <label for="pageFiltersSubCategoryvu" class="custom-control-label">Vanuatu</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryve" class="custom-control-input" value="ve">
+                                                        <label for="pageFiltersSubCategoryve" class="custom-control-label">Venezuela</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryvn" class="custom-control-input" value="vn">
+                                                        <label for="pageFiltersSubCategoryvn" class="custom-control-label">Vietnam</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryvg" class="custom-control-input" value="vg">
+                                                        <label for="pageFiltersSubCategoryvg" class="custom-control-label">Virgin Islands, British</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryvi" class="custom-control-input" value="vi">
+                                                        <label for="pageFiltersSubCategoryvi" class="custom-control-label">Virgin Islands, U.S.</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategorywf" class="custom-control-input" value="wf">
+                                                        <label for="pageFiltersSubCategorywf" class="custom-control-label">Wallis and Futuna</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryye" class="custom-control-input" value="ye">
+                                                        <label for="pageFiltersSubCategoryye" class="custom-control-label">Yemen</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryzm" class="custom-control-input" value="zm">
+                                                        <label for="pageFiltersSubCategoryzm" class="custom-control-label">Zambia</label>
+                        </div>
+                                                <div class="page-filter__option custom-control custom-checkbox">
+                                                        <input type="checkbox" name="location" id="pageFiltersSubCategoryzw" class="custom-control-input" value="zw">
+                                                        <label for="pageFiltersSubCategoryzw" class="custom-control-label">Zimbabwe</label>
+                        </div>
+                                            </div>
+                    </div>
+                    <div class="page-filter__menu-footer dropdown-footer">
+                    <button class="btn btn-gray" data-gig-filter-action="close">CLEAR</button>
+                    <button class="btn btn-primary" data-gig-filter-action="apply">APPLY</button>
+                    </div>
+                </div>
+                </div>
+                <div class="page-filter page-filters__item dropdown dropdown-multiple" data-gig-filter="price" data-placeholder="Price" data-from="3" data-to="150">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownGigsStatuses" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-placeholder="Price">
+                                        <span>Price</span>
+                    
+                </a>
+                <div class="page-filter__menu dropdown-menu" aria-labelledby="dropdownGigsStatuses">
+                    <div class="dropdown-content" data-simplebar style="max-height: 250px;">
+                    <div class="p-5">
+                        <p><strong>Price Range</strong></p>
+                        <input type="text" class="range-slider" name="two_side_slider"
+                                                    value=""
+                                                data-type="double"
+                        data-min="3"
+                        data-max="150"
+                        data-step="0.01"
+                        data-prefix="$"
+                        />
+                    </div>
+                    </div>
+                    <div class="page-filter__menu-footer dropdown-footer">
+                    <button class="btn btn-gray" data-gig-filter-action="close">CLEAR</button>
+                    <button class="btn btn-primary" data-gig-filter-action="apply">APPLY</button>
+                    </div>
+                </div>
+                </div>
+                <button class="btn btn-icon btn-danger-2 search-block__btn" type="button" data-gig-filter="clear-filters" style="display: none;" data-tippy="true" data-tippy-content="Reset all filters"><i class="fas fa-xmark"></i></button>
+            </div>
+        </div>
+        <div class="mb-6 d-flex align-items-end">
+            <div class="list-filter dropdown col-auto p-0" data-gig-filter="sort">
+            <a class="dropdown-toggle dropdown-sortby btn btn-link" href="#" role="button" id="dropdownMenuSort" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sort by <span class="dropdown-sortby__sep">/</span>
+                <span class="dropdown-sortby__selection">
+                                    Newest
+                                </span>
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item active" href="" data-value="">Newest</a>
+                <a class="dropdown-item" href="" data-value="OLDEST">Oldest</a>
+                <a class="dropdown-item" href="" data-value="TITLE">Title</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="gig-cards js-gigs-container" data-load-more="gigs" data-load-more-gigs-page="1" data-load-more-gigs-limit="100">
+      <div class="gigs-list gigs-list--gig-requests" id="gig-requests-list" data-action="filter_browsing_gig_requests">
+                    <div class="gigs-list-item gigs-list-item--primary gig-request" data-request-id="0b5542e48686">
+        <div class="gigs-list-item__outer">
+          <div class="gigs-list-item__inner">
+            <div class="gigs-list-item__content">
+              <div class="gigs-list-item__cats">
+                <span>Digital Marketing</span>
+                <span>Backlinks</span>
+              </div>
+              <h3 class="gigs-list-item__title">
+                I Need Someone to Give Me Backlinks for My Google Profile (Doctor Field Websites or Pages)
+              </h3>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Responded</p>
+              <a href="#" class="fw-medium tdu" data-request-action="view-responses" data-request-id="0b5542e48686">2 responses</a>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Deadline</p>
+              <p class="fw-medium mb-0">21.10.2024</p>
+            </div>
+            <div class="gigs-list-item__price">
+              <small>$</small> <span>4.83</span>
+            </div>
+          </div>
+          <div class="gigs-list-item__actions">
+            <div class="gigs-list-item__action">
+                
+                                    <button
+                    type="button"
+                    class="btn btn-primary btn-block disabled"
+                    data-tippy="true"
+                    data-tippy-content="&lt;h4&gt;Pemission Denied&lt;/h4&gt;&lt;p&gt;Please publish at least one gig to respond gig requests.&lt;/p&gt;"
+                    data-tippy-placement="left-start"
+                    data-tippy-trigger="mouseenter focus focusin click"
+                    data-tippy-interactive="true"
+                    data-tippy-theme="training"
+                    data-tippy-maxwidth="265"
+                    data-gig-action="action-disabled"
+                    >SEND RESPONSE</span>
+                    </button>
+                            </div>
+          </div>
+        </div>
+      </div>
+          <div class="gigs-list-item gigs-list-item--primary gig-request" data-request-id="c2a5592daab6">
+        <div class="gigs-list-item__outer">
+          <div class="gigs-list-item__inner">
+            <div class="gigs-list-item__content">
+              <div class="gigs-list-item__cats">
+                <span>Photo &amp; Video</span>
+                <span>Video Editing</span>
+              </div>
+              <h3 class="gigs-list-item__title">
+                Looking for a Video Editor - Forex Trading
+              </h3>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Responded</p>
+              <a href="#" class="fw-medium tdu" data-request-action="view-responses" data-request-id="c2a5592daab6">2 responses</a>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Deadline</p>
+              <p class="fw-medium mb-0">21.10.2024</p>
+            </div>
+            <div class="gigs-list-item__price">
+              <small>$</small> <span>48.31</span>
+            </div>
+          </div>
+          <div class="gigs-list-item__actions">
+            <div class="gigs-list-item__action">
+                
+                                    <button
+                    type="button"
+                    class="btn btn-primary btn-block disabled"
+                    data-tippy="true"
+                    data-tippy-content="&lt;h4&gt;Pemission Denied&lt;/h4&gt;&lt;p&gt;Please publish at least one gig to respond gig requests.&lt;/p&gt;"
+                    data-tippy-placement="left-start"
+                    data-tippy-trigger="mouseenter focus focusin click"
+                    data-tippy-interactive="true"
+                    data-tippy-theme="training"
+                    data-tippy-maxwidth="265"
+                    data-gig-action="action-disabled"
+                    >SEND RESPONSE</span>
+                    </button>
+                            </div>
+          </div>
+        </div>
+      </div>
+          <div class="gigs-list-item gigs-list-item--primary gig-request" data-request-id="00d8f5e36440">
+        <div class="gigs-list-item__outer">
+          <div class="gigs-list-item__inner">
+            <div class="gigs-list-item__content">
+              <div class="gigs-list-item__cats">
+                <span>Digital Writing</span>
+                <span>Articles &amp; Blog Posts</span>
+              </div>
+              <h3 class="gigs-list-item__title">
+                I&#039;m Looking For Content Writer and SEO For My Wordpress website
+              </h3>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Responded</p>
+              <a href="#" class="fw-medium tdu" data-request-action="view-responses" data-request-id="00d8f5e36440">2 responses</a>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Deadline</p>
+              <p class="fw-medium mb-0">25.10.2024</p>
+            </div>
+            <div class="gigs-list-item__price">
+              <small>$</small> <span>9.66</span>
+            </div>
+          </div>
+          <div class="gigs-list-item__actions">
+            <div class="gigs-list-item__action">
+                
+                                    <button
+                    type="button"
+                    class="btn btn-primary btn-block disabled"
+                    data-tippy="true"
+                    data-tippy-content="&lt;h4&gt;Pemission Denied&lt;/h4&gt;&lt;p&gt;Please publish at least one gig to respond gig requests.&lt;/p&gt;"
+                    data-tippy-placement="left-start"
+                    data-tippy-trigger="mouseenter focus focusin click"
+                    data-tippy-interactive="true"
+                    data-tippy-theme="training"
+                    data-tippy-maxwidth="265"
+                    data-gig-action="action-disabled"
+                    >SEND RESPONSE</span>
+                    </button>
+                            </div>
+          </div>
+        </div>
+      </div>
+          <div class="gigs-list-item gigs-list-item--primary gig-request" data-request-id="3d653f4e9820">
+        <div class="gigs-list-item__outer">
+          <div class="gigs-list-item__inner">
+            <div class="gigs-list-item__content">
+              <div class="gigs-list-item__cats">
+                <span>Convert Files</span>
+                <span>Convert to an Editable File</span>
+              </div>
+              <h3 class="gigs-list-item__title">
+                I Need To Convert PDF to Excel
+              </h3>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Responded</p>
+              <a href="#" class="fw-medium tdu" data-request-action="view-responses" data-request-id="3d653f4e9820">20 responses</a>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Deadline</p>
+              <p class="fw-medium mb-0">30.10.2024</p>
+            </div>
+            <div class="gigs-list-item__price">
+              <small>$</small> <span>28.99</span>
+            </div>
+          </div>
+          <div class="gigs-list-item__actions">
+            <div class="gigs-list-item__action">
+                
+                                    <button
+                    type="button"
+                    class="btn btn-primary btn-block disabled"
+                    data-tippy="true"
+                    data-tippy-content="&lt;h4&gt;Pemission Denied&lt;/h4&gt;&lt;p&gt;Please publish at least one gig to respond gig requests.&lt;/p&gt;"
+                    data-tippy-placement="left-start"
+                    data-tippy-trigger="mouseenter focus focusin click"
+                    data-tippy-interactive="true"
+                    data-tippy-theme="training"
+                    data-tippy-maxwidth="265"
+                    data-gig-action="action-disabled"
+                    >SEND RESPONSE</span>
+                    </button>
+                            </div>
+          </div>
+        </div>
+      </div>
+          <div class="gigs-list-item gigs-list-item--primary gig-request" data-request-id="f5ce237c611d">
+        <div class="gigs-list-item__outer">
+          <div class="gigs-list-item__inner">
+            <div class="gigs-list-item__content">
+              <div class="gigs-list-item__cats">
+                <span>Digital Writing</span>
+                <span>Book Editing</span>
+              </div>
+              <h3 class="gigs-list-item__title">
+                I Need To Mock and Copy the course
+              </h3>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Responded</p>
+              <a href="#" class="fw-medium tdu" data-request-action="view-responses" data-request-id="f5ce237c611d">3 responses</a>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Deadline</p>
+              <p class="fw-medium mb-0">21.10.2024</p>
+            </div>
+            <div class="gigs-list-item__price">
+              <small>$</small> <span>2.90</span>
+            </div>
+          </div>
+          <div class="gigs-list-item__actions">
+            <div class="gigs-list-item__action">
+                
+                                    <button
+                    type="button"
+                    class="btn btn-primary btn-block disabled"
+                    data-tippy="true"
+                    data-tippy-content="&lt;h4&gt;Pemission Denied&lt;/h4&gt;&lt;p&gt;Please publish at least one gig to respond gig requests.&lt;/p&gt;"
+                    data-tippy-placement="left-start"
+                    data-tippy-trigger="mouseenter focus focusin click"
+                    data-tippy-interactive="true"
+                    data-tippy-theme="training"
+                    data-tippy-maxwidth="265"
+                    data-gig-action="action-disabled"
+                    >SEND RESPONSE</span>
+                    </button>
+                            </div>
+          </div>
+        </div>
+      </div>
+          <div class="gigs-list-item gigs-list-item--primary gig-request" data-request-id="0d97d1052eac">
+        <div class="gigs-list-item__outer">
+          <div class="gigs-list-item__inner">
+            <div class="gigs-list-item__content">
+              <div class="gigs-list-item__cats">
+                <span>Digital Marketing</span>
+                <span>E-Commerce Marketing</span>
+              </div>
+              <h3 class="gigs-list-item__title">
+                Etsy Designer Product Creator with proficiency in spreadsheet software
+              </h3>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Responded</p>
+              <a href="#" class="fw-medium tdu" data-request-action="view-responses" data-request-id="0d97d1052eac">2 responses</a>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Deadline</p>
+              <p class="fw-medium mb-0">22.10.2024</p>
+            </div>
+            <div class="gigs-list-item__price">
+              <small>$</small> <span>7.73</span>
+            </div>
+          </div>
+          <div class="gigs-list-item__actions">
+            <div class="gigs-list-item__action">
+                
+                                    <button
+                    type="button"
+                    class="btn btn-primary btn-block disabled"
+                    data-tippy="true"
+                    data-tippy-content="&lt;h4&gt;Pemission Denied&lt;/h4&gt;&lt;p&gt;Please publish at least one gig to respond gig requests.&lt;/p&gt;"
+                    data-tippy-placement="left-start"
+                    data-tippy-trigger="mouseenter focus focusin click"
+                    data-tippy-interactive="true"
+                    data-tippy-theme="training"
+                    data-tippy-maxwidth="265"
+                    data-gig-action="action-disabled"
+                    >SEND RESPONSE</span>
+                    </button>
+                            </div>
+          </div>
+        </div>
+      </div>
+          <div class="gigs-list-item gigs-list-item--primary gig-request" data-request-id="e8d5967428f9">
+        <div class="gigs-list-item__outer">
+          <div class="gigs-list-item__inner">
+            <div class="gigs-list-item__content">
+              <div class="gigs-list-item__cats">
+                <span>Digital Marketing</span>
+                <span>Search Engine Optimization (SEO)</span>
+              </div>
+              <h3 class="gigs-list-item__title">
+                Looking for an Experienced SEO Specialist for Website and Article Indexing
+              </h3>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Responded</p>
+              <a href="#" class="fw-medium tdu" data-request-action="view-responses" data-request-id="e8d5967428f9">5 responses</a>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Deadline</p>
+              <p class="fw-medium mb-0">08.01.2025</p>
+            </div>
+            <div class="gigs-list-item__price">
+              <small>$</small> <span>4.83</span>
+            </div>
+          </div>
+          <div class="gigs-list-item__actions">
+            <div class="gigs-list-item__action">
+                
+                                    <button
+                    type="button"
+                    class="btn btn-primary btn-block disabled"
+                    data-tippy="true"
+                    data-tippy-content="&lt;h4&gt;Pemission Denied&lt;/h4&gt;&lt;p&gt;Please publish at least one gig to respond gig requests.&lt;/p&gt;"
+                    data-tippy-placement="left-start"
+                    data-tippy-trigger="mouseenter focus focusin click"
+                    data-tippy-interactive="true"
+                    data-tippy-theme="training"
+                    data-tippy-maxwidth="265"
+                    data-gig-action="action-disabled"
+                    >SEND RESPONSE</span>
+                    </button>
+                            </div>
+          </div>
+        </div>
+      </div>
+          <div class="gigs-list-item gigs-list-item--primary gig-request" data-request-id="b975d4bc31eb">
+        <div class="gigs-list-item__outer">
+          <div class="gigs-list-item__inner">
+            <div class="gigs-list-item__content">
+              <div class="gigs-list-item__cats">
+                <span>Digital Marketing</span>
+                <span>Backlinks</span>
+              </div>
+              <h3 class="gigs-list-item__title">
+                I Need SEO Expert for My Website
+              </h3>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Responded</p>
+              <a href="#" class="fw-medium tdu" data-request-action="view-responses" data-request-id="b975d4bc31eb">6 responses</a>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Deadline</p>
+              <p class="fw-medium mb-0">07.01.2025</p>
+            </div>
+            <div class="gigs-list-item__price">
+              <small>$</small> <span>9.66</span>
+            </div>
+          </div>
+          <div class="gigs-list-item__actions">
+            <div class="gigs-list-item__action">
+                
+                                    <button
+                    type="button"
+                    class="btn btn-primary btn-block disabled"
+                    data-tippy="true"
+                    data-tippy-content="&lt;h4&gt;Pemission Denied&lt;/h4&gt;&lt;p&gt;Please publish at least one gig to respond gig requests.&lt;/p&gt;"
+                    data-tippy-placement="left-start"
+                    data-tippy-trigger="mouseenter focus focusin click"
+                    data-tippy-interactive="true"
+                    data-tippy-theme="training"
+                    data-tippy-maxwidth="265"
+                    data-gig-action="action-disabled"
+                    >SEND RESPONSE</span>
+                    </button>
+                            </div>
+          </div>
+        </div>
+      </div>
+          <div class="gigs-list-item gigs-list-item--primary gig-request" data-request-id="e1b70edf916b">
+        <div class="gigs-list-item__outer">
+          <div class="gigs-list-item__inner">
+            <div class="gigs-list-item__content">
+              <div class="gigs-list-item__cats">
+                <span>Web Design</span>
+                <span>Web Design</span>
+              </div>
+              <h3 class="gigs-list-item__title">
+                I Need an Online game design in FIGMA
+              </h3>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Responded</p>
+              <a href="#" class="fw-medium tdu" data-request-action="view-responses" data-request-id="e1b70edf916b">0 responses</a>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Deadline</p>
+              <p class="fw-medium mb-0">31.10.2024</p>
+            </div>
+            <div class="gigs-list-item__price">
+              <small>$</small> <span>2.90</span>
+            </div>
+          </div>
+          <div class="gigs-list-item__actions">
+            <div class="gigs-list-item__action">
+                
+                                    <button
+                    type="button"
+                    class="btn btn-primary btn-block disabled"
+                    data-tippy="true"
+                    data-tippy-content="&lt;h4&gt;Pemission Denied&lt;/h4&gt;&lt;p&gt;Please publish at least one gig to respond gig requests.&lt;/p&gt;"
+                    data-tippy-placement="left-start"
+                    data-tippy-trigger="mouseenter focus focusin click"
+                    data-tippy-interactive="true"
+                    data-tippy-theme="training"
+                    data-tippy-maxwidth="265"
+                    data-gig-action="action-disabled"
+                    >SEND RESPONSE</span>
+                    </button>
+                            </div>
+          </div>
+        </div>
+      </div>
+          <div class="gigs-list-item gigs-list-item--primary gig-request" data-request-id="bdc77001c754">
+        <div class="gigs-list-item__outer">
+          <div class="gigs-list-item__inner">
+            <div class="gigs-list-item__content">
+              <div class="gigs-list-item__cats">
+                <span>Web Development</span>
+                <span>Web Development</span>
+              </div>
+              <h3 class="gigs-list-item__title">
+                I Am Looking To Hire An Expert On Coding
+              </h3>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Responded</p>
+              <a href="#" class="fw-medium tdu" data-request-action="view-responses" data-request-id="bdc77001c754">7 responses</a>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Deadline</p>
+              <p class="fw-medium mb-0">10.12.2024</p>
+            </div>
+            <div class="gigs-list-item__price">
+              <small>$</small> <span>140.10</span>
+            </div>
+          </div>
+          <div class="gigs-list-item__actions">
+            <div class="gigs-list-item__action">
+                
+                                    <button
+                    type="button"
+                    class="btn btn-primary btn-block disabled"
+                    data-tippy="true"
+                    data-tippy-content="&lt;h4&gt;Pemission Denied&lt;/h4&gt;&lt;p&gt;Please publish at least one gig to respond gig requests.&lt;/p&gt;"
+                    data-tippy-placement="left-start"
+                    data-tippy-trigger="mouseenter focus focusin click"
+                    data-tippy-interactive="true"
+                    data-tippy-theme="training"
+                    data-tippy-maxwidth="265"
+                    data-gig-action="action-disabled"
+                    >SEND RESPONSE</span>
+                    </button>
+                            </div>
+          </div>
+        </div>
+      </div>
+          <div class="gigs-list-item gigs-list-item--primary gig-request" data-request-id="89cca5d5ae90">
+        <div class="gigs-list-item__outer">
+          <div class="gigs-list-item__inner">
+            <div class="gigs-list-item__content">
+              <div class="gigs-list-item__cats">
+                <span>Digital Marketing</span>
+                <span>E-Commerce SEO</span>
+              </div>
+              <h3 class="gigs-list-item__title">
+                I need Social Media Marketing Expert
+              </h3>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Responded</p>
+              <a href="#" class="fw-medium tdu" data-request-action="view-responses" data-request-id="89cca5d5ae90">6 responses</a>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Deadline</p>
+              <p class="fw-medium mb-0">01.12.2024</p>
+            </div>
+            <div class="gigs-list-item__price">
+              <small>$</small> <span>4.83</span>
+            </div>
+          </div>
+          <div class="gigs-list-item__actions">
+            <div class="gigs-list-item__action">
+                
+                                    <button
+                    type="button"
+                    class="btn btn-primary btn-block disabled"
+                    data-tippy="true"
+                    data-tippy-content="&lt;h4&gt;Pemission Denied&lt;/h4&gt;&lt;p&gt;Please publish at least one gig to respond gig requests.&lt;/p&gt;"
+                    data-tippy-placement="left-start"
+                    data-tippy-trigger="mouseenter focus focusin click"
+                    data-tippy-interactive="true"
+                    data-tippy-theme="training"
+                    data-tippy-maxwidth="265"
+                    data-gig-action="action-disabled"
+                    >SEND RESPONSE</span>
+                    </button>
+                            </div>
+          </div>
+        </div>
+      </div>
+          <div class="gigs-list-item gigs-list-item--primary gig-request" data-request-id="9d3b7b9d2bb4">
+        <div class="gigs-list-item__outer">
+          <div class="gigs-list-item__inner">
+            <div class="gigs-list-item__content">
+              <div class="gigs-list-item__cats">
+                <span>Photo &amp; Video</span>
+                <span>Video Editing</span>
+              </div>
+              <h3 class="gigs-list-item__title">
+                Looking for a shorts video editor
+              </h3>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Responded</p>
+              <a href="#" class="fw-medium tdu" data-request-action="view-responses" data-request-id="9d3b7b9d2bb4">20 responses</a>
+            </div>
+            <div class="gigs-list-item__meta">
+              <p class="mb-0 text-gray-400">Deadline</p>
+              <p class="fw-medium mb-0">27.10.2024</p>
+            </div>
+            <div class="gigs-list-item__price">
+              <small>$</small> <span>2.90</span>
+            </div>
+          </div>
+          <div class="gigs-list-item__actions">
+            <div class="gigs-list-item__action">
+                
+                                    <button
+                    type="button"
+                    class="btn btn-primary btn-block disabled"
+                    data-tippy="true"
+                    data-tippy-content="&lt;h4&gt;Pemission Denied&lt;/h4&gt;&lt;p&gt;Please publish at least one gig to respond gig requests.&lt;/p&gt;"
+                    data-tippy-placement="left-start"
+                    data-tippy-trigger="mouseenter focus focusin click"
+                    data-tippy-interactive="true"
+                    data-tippy-theme="training"
+                    data-tippy-maxwidth="265"
+                    data-gig-action="action-disabled"
+                    >SEND RESPONSE</span>
+                    </button>
+                            </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+      <div class="load-more-gigs-container text-center mt-4 d-flex justify-content-center">
+        <button class="load-more-gigs btn btn-gray" data-load-more-gigs-btn style="display: none"><span>Load More Gig requests</span></button>
+        <p class="mb-0 load-more-gigs-loaded" style="display: block">All gig requests have been loaded.</p>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="modal fade" id="gigStatusReasonModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><u><span id="modal-title"></span> EXPLANATION DETAILS:</u></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <strong>Gig <span id="modal-action-text"></span> on <span id="gig-status-reason-modal-date"></span></strong><br><br>
+                <strong>Reason for <span id="modal-action-reason-text">not approving</span>:</strong><br><br>
+                <p id="gig-status-reason-modal-text"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="confirm-gig-status-reason-btn" class="btn btn-success">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+              <footer class="footer mt-auto">
+  <div class="container-fluid container-fluid--max">
+    <div class="footer__top d-lg-flex align-lg-items-center">
+      <a href="/browse-gigs.html">
+        <img src="/assets/images/logo-sg.svg" alt="SproutGigs" class="navbar-brand__regular d-none">
+        <img src="/assets/images/logo-sg-light.svg" alt="SproutGigs" class="navbar-brand__dark-mode">
+      </a>
+      <ul class="footer__nav nav ml-auto">
+        <li class="nav-item"><a href="/referral-program.html" class="nav-link"><span>Referral Program</span></a></li>
+        <li class="nav-item"><a href="/faq.html" class="nav-link"><span>FAQ</span></a></li>
+        <li class="nav-item"><a href="/faq.html#our-rules" class="nav-link"><span>Rules</span></a></li>
+        <li class="nav-item"><a href="/api/documentation.html" class="nav-link"><span>API docs</span></a></li>
+        <li class="nav-item"><a href="/terms.html" class="nav-link"><span>Terms of Use</span></a></li>
+        <li class="nav-item"><a href="/privacy.html" class="nav-link"><span>Privacy Policy</span></a></li>
+        <li class="nav-item"><a href="/tickets.html" class="nav-link"><span>Support Help</span></a></li>
+      </ul>
+    </div>
+    <div class="footer__bottom d-flex justify-content-center pt-0 pb-2 justify-content-md-end">
+      <div class="setting-toggle align-items-center d-flex flex-nowrap">
+  <span class="mr-2">darkmode</span>
+        <span>off</span>
+        <div id="darkModeToggle" class="zawp-toggle zawp-toggle--checked-last not-functional mx-2 switch-darkmode" data-change-darkmode-to="off"><span class="zawp-toggle__switch m-0"></span></div>
+      <span>on</span>
+  </div>
+
+    </div>
+    <div class="footer__bottom d-md-flex align-items-center justify-content-between">
+      <p class="text-muted mb-md-0">&copy; 2024 SproutGigs.com. All Rights Reserved.</p>
+      <div class="social">
+        <a href="/tickets.html"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.facebook.com/groups/sproutgigs/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/sproutgigs" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.reddit.com/r/SproutGigs" target="_blank" rel="noopener noreferrer"><i class="fab fa-reddit-square"></i></a>
+        <a href="https://www.linkedin.com/company/sproutgigs/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="row mt-3 pl-4">
+      <span class="text-muted text-sm">47 U.S. Code § 230 Disclaimer: SproutGigs shall not be treated as the publisher or speaker of any information provided by job publishers.</span>
+    </div>
+  </div>
+</footer>
+
+        </div>
+
+        <script src="https://js.stripe.com/v3"></script>
+        <script type="text/javascript">
+            if (self == top) {
+                document.getElementsByTagName('body')[0].style.display='block';
+            } else {
+                top.location = self.location;
+            }
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141600439-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-141600439-1');
+                        gtag('set', {'user_id': '2bbff89f'});
+                    </script>
+
+            <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8d5b007deff291c3","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2024.10.1","token":"8ab37f5b1f244daa9b89bb0f45eba75c"}' crossorigin="anonymous"></script>
+</body>
+</html>

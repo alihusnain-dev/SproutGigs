@@ -1,0 +1,695 @@
+<!doctype html>
+<!--[if IE 7]><html class="ie ie7"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if !(IE 7) | !(IE 8)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+    <head>
+                <title>My Surveys &amp; Offers | SproutGigs</title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap&amp;family=Farsan" rel="stylesheet">
+
+        <!-- Hotjar Tracking Code for https://sproutgigs.com/ -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:2261922,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+
+        <script>
+            var arguments = {};
+                        arguments = { userId: '2bbff89f' };
+                        window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push(arguments);
+        </script>
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P6G6QRQ');</script>
+        <!-- End Google Tag Manager -->
+
+                    <link rel="stylesheet" href="/assets/css/vendor.min.css?v=202310261236"/>
+            <link rel="stylesheet" href="/assets/css/app.min.css?v=202409201812"/>
+            <script src="/assets/js/jquery.min.js"></script>
+            <script src="/assets/js/pico-vendor.min.js?v=202410031253"></script>
+            <script src="/assets/js/pico-app.min.js?v=202410031253"></script>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="/assets/js/vendor/respond.min.js"></script>
+        <script src="/assets/js/vendor/PIE.js"></script>
+        <![endif]-->
+
+        <script>
+            var csrf_token = '65e2bbbf53039c60fc13812626b110dd';
+            var systemAlert = '103';
+            var tasks_ok = '0';
+        </script>
+
+            </head>
+
+    <body class="dark-mode ">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6G6QRQ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <div class="site d-flex flex-column min-vh-100">
+            <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid container-fluid--max-lg">
+    <img class="navbar__gradient" src="/gradient.html">
+    <a class="navbar-brand" href="/browse-gigs.html">
+      <img src="/assets/images/logo-sg.svg" alt="SproutGigs" class="navbar-brand__regular d-none">
+      <img src="/assets/images/logo-sg-light.svg" alt="SproutGigs" class="navbar-brand__dark-mode">
+    </a>
+
+    <div class="d-none d-lg-block flex-grow-0">
+      <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown ml-0">
+            <a class="nav-link" href="/worker/gigs.html" data-toggle="dropdown">
+              <span>
+                Gigs <i class="fas fa-caret-down"></i>
+              </span>
+                          </a>
+            <div class="dropdown-menu mt-3">
+              <a class="dropdown-item d-flex align-items-center justify-content-between text-body" href="/browse-gigs.html">Browse Gigs</a>
+                              <a class="dropdown-item d-flex align-items-center justify-content-between text-body" href="/seller/gig-requests.html">Browse Gig Requests</a>
+                <a class="dropdown-item d-flex align-items-center justify-content-between text-body" href="/seller/posted-gigs.html">My Posted Gigs</a>
+                <a
+                  class="dropdown-item d-flex align-items-center justify-content-between text-body"
+                  href="/seller/gig-orders.html"
+                                  >
+                  My Gig Orders
+                                  </a>
+                <a class="dropdown-item d-flex align-items-center justify-content-between text-body" href="/seller/post-gig.html">Post Gig</a>
+                          </div>
+          </li>
+        
+                              <li class="nav-item dropdown ml-0">
+              <a class="nav-link" href="/worker.html" data-toggle="dropdown"><span>MicroJobs <i class="fas fa-caret-down"></i></span></a>
+              <div class="dropdown-menu mt-3">
+                <a class="dropdown-item d-flex align-items-center justify-content-between text-body" href="/jobs.html">Find Jobs</a>
+                <a class="dropdown-item d-flex align-items-center justify-content-between text-body" href="/worker.html">Finished Tasks <span>0</span></a>
+                <hr class="m-0">
+                <div class="py-2 px-4">
+                  <div class="py-2 mb-0 op-6 d-flex align-items-center justify-content-between">
+                    <strong>satisfied + paid</strong>
+                    <span>0</span>
+                  </div>
+                  <div class="py-2 mb-0 op-6 d-flex align-items-center justify-content-between">
+                    <strong>pending review</strong>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+                  
+                  <li class="nav-item dropdown ml-0">
+            <a class="nav-link" href="/surveys-offers.html" data-toggle="dropdown"><span>Surveys &amp; Offers</span> <i class="fas fa-caret-down"></i><sup class="symbol symbol--warning pb-0 ml-1">New</sup></a>
+            <div class="dropdown-menu mt-3">
+              <a class="dropdown-item text-body pb-2" href="/surveys-offers.html">Browse Surveys &amp; Offers</a>
+              <a class="dropdown-item text-body" href="/my-surveys-offers.html">My Surveys &amp; Offers</a>
+            </div>
+          </li>
+        
+        <li class="nav-item ml-0">
+          <a class="nav-link" href="/wallet.html"><span>Wallet</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar-right d-flex align-items-center">
+      <ul class="nav align-items-center navbar-nav-2 nav--dynamic d-none d-lg-flex">
+
+                  <a class="nav-link switch-profile-text switch-profile-text--desktop d-flex align-items-center flex-nowrap" href="#" data-change-profile-to="employer">
+            <span>buyer</span>
+            <div class="zawp-toggle zawp-toggle--checked-last not-functional mx-2"><span class="zawp-toggle__switch m-0"></span></div>
+            <span>freelancer</span>
+          </a>
+        
+                  <li class="nav-item">
+            <a class="nav-link" href="/tickets.html" data-tippy="true" data-tippy-content="support center">
+              <i class="far fa-question-circle"></i>
+            </a>
+          </li>
+                <li class="nav-item dropdown navbar__dropdown" id="notificationsDropdown">
+          <a class="nav-link notificationDropdown" href="#" data-toggle="dropdown" data-tippy="true" data-tippy-content="view notifications">
+            <i class="far fa-bell"></i>
+                      </a>
+          <div class="notifications dropdown-menu dropdown-menu-right">
+                <ul class="nav nav-tabs justify-content-between" id="notificationsTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link text-primary" id="gigs-notifications-tab" href="#gigs-notifications" role="tab" aria-controls="gigs-notifications" aria-selected="false">Gigs</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link text-primary" id="jobs-notifications-tab" href="#jobs-notifications" role="tab" aria-controls="jobs-notifications" aria-selected="false">MicroJobs</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link text-primary active" id="other-notifications-tab" href="#other-notifications" role="tab" aria-controls="other-notifications" aria-selected="true">Other</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="notificationsTabContent">
+                    <div class="tab-pane fade" id="gigs-notifications" role="tabpanel" aria-labelledby="gigs-notifications-tab">
+                                                    <span class="notification text-center">You don't have any notifications at the moment.</span>
+                                                                    </div>
+                    <div class="tab-pane fade" id="jobs-notifications" role="tabpanel" aria-labelledby="jobs-notifications-tab">
+                                                    <span class="notification text-center">You don't have any notifications at the moment.</span>
+                                                                    </div>
+                    <div class="tab-pane fade show active" id="other-notifications" role="tabpanel" aria-labelledby="other-notifications-tab">
+                                                    <span class="notification text-center">You don't have any notifications at the moment.</span>
+                                                                    </div>
+                </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown navbar__dropdown navbar__logs logs-dd">
+          <a class="nav-link" href="#" data-toggle="dropdown"
+            data-tippy="true"
+            data-tippy-content="view logs"
+          >
+            <i class="fas fa-history"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right custom-scrollbar-css">
+                                      <div class="dropdown-item d-block">
+                                  <span class="logs-dd__desc">You created an account - Welcome to SproutGigs!</span>
+                                <br>
+                <span class="logs-dd__time">Oct 20, 2024 at 16:34</span>
+              </div>
+                                      <div class="see-all w-100 text-center pt-2 pb-2">
+                <a href="/user-history.html#log-tab">See all</a>
+              </div>
+                      </div>
+        </li>
+      </ul>
+
+      <button class="navbar-toggler ml-3" type="button" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+              </button>
+
+      <ul class="d-none d-lg-block nav align-items-center navbar-nav-2">
+        <li class="nav-item navbar-nav__profile profile-dropdown dropdown dropdown-stick">
+          <a class="nav-link" href="#" data-toggle="dropdown" data-tippy="true" data-tippy-content="profile">
+            <div class="d-flex align-items-center flex-nowrap">
+              <img src="/assets/images/profile_no_image.gif" alt="alihusnain_dev">
+            </div>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <span class="profile-dropdown__name">Hello, alihusnain_dev</span>
+            <span class="dropdown-hr mt-0"></span>
+            <a class="dropdown-item" href="/account.html">Account Settings</a>
+            <a class="dropdown-item" href="/u/alihusnain_dev">My Profile</a>
+            <a class="dropdown-item" href="/ranks.html">MicroJobs Ranking</a>
+            <a class="dropdown-item" href="/ranks-gigs.html">Gigs Ranking</a>
+            <a class="dropdown-item" href="/faq.html">FAQ</a>
+            <a class="dropdown-item" href="/faq.html#our-rules">Rules</a>
+            <a class="dropdown-item" href="/account.html#programs-offers">Share &amp; Earn</a>
+            <a class="dropdown-item" href="/auth/logout.html">Logout</a>
+          </div>
+        </li>
+      </ul>
+      <div class="setting-toggle navbar__dark-mode d-none d-sm-block" data-setting-toggle="darkmode">
+        <input type="checkbox" id="darkModeNavToggle" class="toggle__input" checked="checked">
+        <label for="darkModeNavToggle" class="text-gray p-2 mb-0 setting-toggle__label-enable align-items-center d-none"
+          data-tippy="true"
+          data-tippy-content="dark mode"
+        >
+          <i class="fas fa-moon"></i>
+        </label>
+        <label for="darkModeNavToggle" class="text-gray p-2 mb-0 setting-toggle__label-disable align-items-center"
+          data-tippy="true"
+          data-tippy-content="light mode"
+        >
+          <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 8.467 8.467"><path d="M 15.988281 0.98242188 A 1.0001 1.0001 0 0 0 15.886719 0.98828125 A 1.0001 1.0001 0 0 0 15 2 L 15 6.0019531 A 1.0002461 1.0002461 0 1 0 17 6.0019531 L 17 2 A 1.0001 1.0001 0 0 0 15.988281 0.98242188 z M 6.0898438 5.0878906 A 1.0001 1.0001 0 0 0 5.9863281 5.09375 A 1.0001 1.0001 0 0 0 5.3964844 6.8066406 L 8.2226562 9.6328125 A 1.0001 1.0001 0 1 0 9.6328125 8.2226562 L 6.8066406 5.3964844 A 1.0001 1.0001 0 0 0 6.0898438 5.0878906 z M 25.880859 5.09375 A 1.0001 1.0001 0 0 0 25.195312 5.3964844 L 22.367188 8.2226562 A 1.0001 1.0001 0 1 0 23.777344 9.6328125 L 26.603516 6.8066406 A 1.0001 1.0001 0 0 0 25.880859 5.09375 z M 16 8 A 7.9999995 7.9999995 0 0 0 8 16 A 7.9999995 7.9999995 0 0 0 16 24 A 7.9999995 7.9999995 0 0 0 24 16 A 7.9999995 7.9999995 0 0 0 16 8 z M 2 15 A 1.000252 1.000252 0 1 0 2 17 L 6.0019531 17 A 1.000252 1.000252 0 1 0 6.0019531 15 L 2 15 z M 25.998047 15 A 1.000252 1.000252 0 1 0 25.998047 17 L 30 17 A 1.000252 1.000252 0 1 0 30 15 L 25.998047 15 z M 23.060547 22.058594 A 1.0001 1.0001 0 0 0 22.957031 22.064453 A 1.0001 1.0001 0 0 0 22.367188 23.777344 L 25.195312 26.603516 A 1.0001 1.0001 0 1 0 26.603516 25.193359 L 23.777344 22.367188 A 1.0001 1.0001 0 0 0 23.060547 22.058594 z M 8.9101562 22.064453 A 1.0001 1.0001 0 0 0 8.2226562 22.367188 L 5.3964844 25.193359 A 1.0001 1.0001 0 1 0 6.8066406 26.603516 L 9.6328125 23.777344 A 1.0001 1.0001 0 0 0 8.9101562 22.064453 z M 15.982422 24.986328 A 1.0001 1.0001 0 0 0 15 25.998047 L 15 30 A 1.0002461 1.0002461 0 1 0 17 30 L 17 25.998047 A 1.0001 1.0001 0 0 0 15.982422 24.986328 z " paint-order="fill markers stroke" transform="scale(.26458)"/></svg>
+        </label>
+      </div>
+          </div>
+  </div>
+</nav>
+
+<div class="site-notice">
+  <div class="container-fluid container-fluid--max">
+    <div class="row align-items-center">
+      <div class="col-sm-5 mb-2 mb-sm-0">
+        <a href="/api/documentation.html">API</a>
+        <span class="mx-1">|</span>
+        <a href="/account.html#programs-offers">Refer a Friend</a>
+                  <span class="mx-1">|</span>
+          <a href="/surveys-offers.html?s=cpx" class="text-primary" data-toggle="modal" data-target="#hdr-cpx"><b>
+          Paid Surveys  (2)          </b></a>
+              </div>
+      <div class="col-sm-7 d-flex align-items-center justify-content-sm-end flex-wrap">
+                  <div class="mb-0 mr-5 d-flex justify-content-center">
+            <strong class="mr-2">Earned:</strong>
+            <a href="/worker.html?filter=SATISFIED">
+              <span id="earned-balance">$0.0000</span>
+            </a>
+          </div>
+          <div class="mb-0 mr-5 d-flex justify-content-center">
+            <strong class="mr-2">Pending:</strong>
+            <a href="/worker.html?filter=PENDING">
+              <span>$0.0000</span>
+            </a>
+          </div>
+          <div class="mb-0 d-flex justify-content-center" data-tippy="true" data-tippy-content="The submit tasks interval is the time in seconds you have to wait between completing tasks. New freelancers start with 180 seconds. Not satisfied rated tasks gain a 20 second penalty, and system blocked spam proofs gain a 60 second penalty. Each satisfied task reduces the timer 10 seconds. Your task interval timer must be zero to withdraw. Higher level freelancers earn a buffer.">
+            <strong class="mr-1"><i class="far fa-clock align-middle"></i></strong>
+            <span id="earned-balance">180s</span>
+          </div>
+                      </div>
+    </div>
+  </div>
+</div>
+
+<div class="side-nav">
+  <div class="side-nav__inner">
+    <div class="side-nav__header d-flex align-items-center justify-content-between p-0">
+      <ul class="nav align-items-center navbar-nav-2">
+        <li class="nav-item navbar-nav__profile">
+          <a class="nav-link" href="#">
+            <div class="d-flex align-items-center flex-nowrap">
+              <img src="/assets/images/profile_no_image.gif" alt="alihusnain_dev" class="mr-3">
+              <span>Hello, alihusnain_dev</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <button class="navbar-btn--close btn btn-link ml-auto mr-0 p-4"><i class="sg-icon sg-icon-cross-2"></i></button>
+    </div>
+    <div class="side-nav__body">
+      <div class="nav flex-column pt-1">
+        <li class="nav-item">
+                      <a class="nav-link switch-profile-text d-flex align-items-center flex-nowrap" href="#" data-change-profile-to="employer">
+              <span>buyer</span>
+              <div class="zawp-toggle zawp-toggle--checked-last not-functional mx-2"><span class="zawp-toggle__switch m-0"></span></div>
+              <span>freelancer</span>
+            </a>
+                  </li>
+      </div>
+      <ul class="nav flex-column pt-3">
+                  <li class="nav-item position-relative" id="gigs-menu" style="width: fit-content;">
+            <div class="list-group">
+              <a href="#gigs-submenu" class="nav-link list-group-header border-0 pt-0" data-toggle="collapse" data-parent="#gigs-menu" >
+                Gigs<i class="fa fa-caret-down mx-2"></i>
+                              </a>
+              <div class="collapse" id="gigs-submenu">
+                <a class="ml-2 list-group-item small text-body border-0" href="/browse-gigs.html">Browse Gigs</a>
+                                  <a class="ml-2 list-group-item small text-body border-0 pt-0" href="/seller/gig-requests.html">Browse Gig Requests</a>
+                  <a class="ml-2 list-group-item small text-body border-0 pt-0" href="/seller/posted-gigs.html">My Posted Gigs</a>
+                  <a
+                    class="ml-2 list-group-item small text-body border-0 pt-0"
+                    href="/seller/gig-orders.html"
+                    style="width: fit-content;"
+                                      >
+                    My Gig Orders
+                                      </a>
+                  <a class="ml-2 list-group-item small text-body border-0 pt-0" href="/seller/post-gig.html">Post Gig</a>
+                              </div>
+            </div>
+          </li>
+        
+                  <li class="nav-item position-relative" id="microjobs-menu" style="width: fit-content;">
+            <div class="list-group">
+              <a href="#microjobs-submenu" class="nav-link list-group-header border-0 pt-0" data-toggle="collapse" data-parent="#microjobs-menu" >
+                MicroJobs<i class="fa fa-caret-down mx-2"></i>
+              </a>
+                          <div class="collapse" id="microjobs-submenu">
+                <a class="ml-2 list-group-item small text-body border-0" href="/jobs.html">Find Jobs</a>
+                <a class="ml-2 list-group-item small text-body border-0" href="/worker.html">Finished Tasks <span class="badge badge-primary ml-2">0</span></a>
+                <span class="ml-2 list-group-item small text-gray border-0 font-italic">satisfied + paid <span class="badge badge-primary ml-2">0</span></span>
+                <span class="ml-2 list-group-item small text-gray border-0 font-italic">pending review <span class="badge badge-primary ml-2">0</span></span>
+              </div>
+                        </div>
+          </li>
+        
+                  <li class="nav-item position-relative" id="surveys-offers-menu" style="width: fit-content;">
+            <div class="list-group">
+              <a href="#surveys-offers-submenu" class="nav-link list-group-header border-0 pt-0" data-toggle="collapse" data-parent="#surveys-offers-menu" >
+                Surveys &amp; Offers<i class="fa fa-caret-down mx-2"><sup class="symbol symbol--warning pb-0 ml-1">New</sup></i>
+              </a>
+            <div class="collapse" id="surveys-offers-submenu">
+                <a class="ml-2 list-group-item small text-body border-0" href="/surveys-offers.html">Browse Surveys &amp; Offers</a>
+                <a class="ml-2 list-group-item small text-body border-0" href="/my-surveys-offers.html">My Surveys &amp; Offers</span></a>
+            </div>
+          </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/wallet.html">Wallet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/account.html">Account Settings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ranks.html">MicroJobs Ranking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ranks-gigs.html">Gigs Ranking</a>
+        </li>
+        <li class="nav-item position-relative">
+          <a class="nav-link" href="/tickets.html">Support Tickets</a>
+                  </li>
+        <li class="nav-item position-relative">
+          <a class="nav-link notificationDropdown" href="/user-history.html">Notifications</a>
+                  </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/user-history.html#log-tab">Logs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/faq.html#our-rules">Rules</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/account.html#programs-offers">Share &amp; Earn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/auth/logout.html">Logout</a>
+        </li>
+      </ul>
+    </div>
+    <div class="side-nav__footer">
+          </div>
+  </div>
+</div>
+
+<div class="modal share-gig-modal fade" tabindex="-1" id="hdr-cpx" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title pl-4">CPX Research</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pt-0">
+        <div>
+          <iframe id="hdr-cpx-iframe" data-src="https://offers.cpx-research.com/index.html?app_id=7858&amp;ext_user_id=2bbff89f&amp;secure_hash=37cee45eee14626c34f9b6702d82b9af&amp;username=alihusnain_dev&amp;email=alihusnain@finjineers.com&amp;subid_1=&amp;subid_2=&amp;main_info=true&amp;birthday_day=00&amp;birthday_month=00&amp;birthday_year=0000&amp;gender=u&amp;user_country_code=pk&amp;zip_code=" style="width:100%; height:800px; border:0; padding:0; margin:0;" scrolling="yes" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  jQuery(document).ready(function() {
+    jQuery("#hdr-cpx").on('shown.bs.modal', function() {
+      jQuery('#hdr-cpx iframe').attr('src', jQuery('#hdr-cpx iframe').attr('data-src') );
+    });
+  });
+</script>
+
+                                <div class="mb-0 rounded-0 pw-banner align-items-center" style="display: none;"></div>
+
+                <div class="site-alerts">
+  <div class="container-fluid container-fluid--max">
+    
+    
+    
+            <div class="alert alert-with-icon pw-badge-warning alert-dismissible fade show font-weight-medium mt-3" role="alert">
+          <i class="svg-icon-emergency-green alert-icon"></i>
+          Improve your account security. Add a recovery email now to ensure uninterrupted access to your account. Safeguard your account in case you lose access to your main email. <a href="/account.html#security" class="text-warning">Go to Account Settings > Security</a>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+    
+    
+                    <div class="alert alert-with-icon pw-badge-info alert-dismissible fade show font-weight-medium system-alert-103 mt-3" data-alert="103" role="alert">
+            <i class="svg-icon-emergency-green alert-icon"></i>
+            We’re thrilled to announce a limited-time promotion: Get 10% referral earnings bonus on all new account deposits until the end of 2024  <a href="https://www.facebook.com/groups/sproutgigs/permalink/1847850875725961">Learn more here.</a>
+            <button type="button" class="close close-system-alert" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+    
+      </div>
+</div>
+
+              
+            <div class="main"><div class="container-fluid container-fluid--max">
+  <div class="row justify-content-between">
+    <div class="content-area col-12">
+      <div class="page-header mb-7 row">
+        <div class="col-lg-6">
+          <h3 class="headline h1 mb-4">My Survey &amp; Offers</h3>
+          <p class="text-md">Here you can view the main statistics for completed offers and surveys, as well as access a list of all started and completed tasks.</p>
+          <a href="/surveys-offers.html" class="fw-bold"><span>Go to Offers and Surveys</span> <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+      </div>
+      <div class="referral-stats mb-5">
+        <h3>Statistics</h3>
+        <h5 class="text-gray-400 mb-5">* Pending payments from Surveys &amp; Offers are included.</h5>
+        <div class="row row-gutter-xxs">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="p-3 bg-gray-0">
+              <div class="h1">0</div>
+              <p class="mb-0 text-md mt-4 mt-md-7">Completed offers</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="p-3 bg-gray-0">
+              <div class="h1">0</div>
+              <p class="mb-0 text-md mt-4 mt-md-7">Completed surveys</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="p-3 bg-gray-0">
+              <div class="h1">$0.00</div>
+              <p class="mb-0 text-md mt-4 mt-md-7">Earnings for the last 30 days</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="p-3 bg-gray-0">
+              <div class="h1">$0.00</div>
+              <p class="mb-0 text-md mt-4 mt-md-7">Total earnings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-7">
+
+      <div class="referral-activity mb-5">
+        <h3 class="mb-3">Activity</h3>
+        <p class="mb-5">You can navigate to the started offer or add a review to the completed one.</p>
+        <ul class="nav nav-tabs nav-tabs--bar mb-3" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link pb-2 active" id="all-activity-tab" data-toggle="tab" data-target="#all-activity" type="button" role="tab" aria-controls="all-activity" aria-selected="true">All Activity</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link pb-2" id="activity-started-tab" data-toggle="tab" data-target="#activity-started" type="button" role="tab" aria-controls="activity-started" aria-selected="false">Started</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link pb-2" id="activity-requires-review-tab" data-toggle="tab" data-target="#activity-requires-review" type="button" role="tab" aria-controls="activity-requires-review" aria-selected="false">Requires review</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="all-activity" role="tabpanel" aria-labelledby="all-activity-tab">
+            <table class="table table-style-list table-hover table-middle table-responsive-md mb-5">
+              <thead>
+                <tr class="table-row">
+                  <th scope="col">Date</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Reward</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody id="all-activities">
+                
+              </tbody>
+            </table>
+            <div class="text-center">
+                          </div>
+          </div>
+          <div class="tab-pane fade" id="activity-started" role="tabpanel" aria-labelledby="activity-started-tab">
+            <table class="table table-style-list table-hover table-middle table-responsive-md mb-5">
+              <thead>
+                <tr class="table-row">
+                  <th scope="col">Date</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Reward</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody id="started-activities">
+                
+              </tbody>
+            </table>
+            <div class="text-center">
+                          </div>
+          </div>
+          <div class="tab-pane fade" id="activity-requires-review" role="tabpanel" aria-labelledby="activity-requires-review-tab">
+            <table class="table table-style-list table-hover table-middle table-responsive-md mb-5">
+              <thead>
+                <tr class="table-row">
+                  <th scope="col">Date</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Reward</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody id="requires-review-activities">
+                
+              </tbody>
+            </table>
+            <div class="text-center">
+                          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal offer-popup fade" id="review-modal" tabindex="-1" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" id="details-modal-content">
+        <form action="/my-surveys-offers.html" method="POST" class="post-survey-offer-review">
+          <input type="hidden" name="csrf_token" value="65e2bbbf53039c60fc13812626b110dd">
+          <input id="partner-id" name="partner_id" type="hidden" value="">
+          <input id="partner-resource-id" name="partner_resource_id" type="hidden" value="">
+          <input id="activity-id" name="activity_id" type="hidden" value="">
+          <input name="action" type="hidden" value="add-review">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fas fa-close"></i>
+            </button>
+
+            <div class="page-header mb-6">
+              <h3 class="headline h1 mb-4">Please add review</h3>
+              <p class="op-6 text-body text-md text-justify" id="review-summary">You have completed the offer <b id="item-title"></b> from Provider <b id="item-provider"></b></p>
+            </div>
+            <h4 class="align-items-center d-flex justify-content-between">
+              <span id="review-for">Review for offer</span>
+              <button
+                class="btn btn-icon btn-warning ml-4 rounded-lg"
+                type="button"
+                data-tippy="true"
+                data-tippy-content='<h4>Other people writing</h4><p>The task was indeed not difficult. It took me about 3 minutes to complete. I received the payment immediately upon completion. Thank you for providing such great offers.</p>'
+                data-tippy-placement="right-start"
+                data-tippy-trigger="click mouseover"
+                data-tippy-theme="training"
+                data-tippy-interactive="true"
+                data-tippy-maxwidth="265"
+                aria-expanded="false"
+              >
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </h4>
+            <p class="mb-2 op-6 text-justify">Please share your feedback and rating of your experience. We value your opinion and are open to any suggestions for improvement. If there are any specific aspects that you liked or, conversely, need improvement, please let us know.</p>
+            <div class="form-group">
+              <div class="star-rating star-rating--fillable justify-content-start">
+                <input name="rating" id="rating" type="hidden" class="star-rating__input">
+                <div class="star-rating__items">
+                  <span class="star-rating__item"><i class="fas fa-star"></i></span>
+                  <span class="star-rating__item"><i class="fas fa-star"></i></span>
+                  <span class="star-rating__item"><i class="fas fa-star"></i></span>
+                  <span class="star-rating__item"><i class="fas fa-star"></i></span>
+                  <span class="star-rating__item"><i class="fas fa-star"></i></span>
+                </div>
+                <span class="star-rating__count">0</span>
+              </div>
+              <div class="invalid-feedback d-block rating mb-4"></div>
+            </div>
+            <div class="form-group mb-0">
+              <textarea name="comment" id="comment" cols="30" rows="6" class="form-control" data-max-chars="500" data-max-chars-text="{chars} remaining chars" placeholder="Comments" required></textarea>
+              <div class="invalid-feedback d-block comment"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="post-survey-offer-review__submit btn btn-primary offer-popup__btn btn-lg btn-block   "><span>Post Review</span></button>
+          </div>
+        <form>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+            <footer class="footer mt-auto">
+  <div class="container-fluid container-fluid--max">
+    <div class="footer__top d-lg-flex align-lg-items-center">
+      <a href="/browse-gigs.html">
+        <img src="/assets/images/logo-sg.svg" alt="SproutGigs" class="navbar-brand__regular d-none">
+        <img src="/assets/images/logo-sg-light.svg" alt="SproutGigs" class="navbar-brand__dark-mode">
+      </a>
+      <ul class="footer__nav nav ml-auto">
+        <li class="nav-item"><a href="/referral-program.html" class="nav-link"><span>Referral Program</span></a></li>
+        <li class="nav-item"><a href="/faq.html" class="nav-link"><span>FAQ</span></a></li>
+        <li class="nav-item"><a href="/faq.html#our-rules" class="nav-link"><span>Rules</span></a></li>
+        <li class="nav-item"><a href="/api/documentation.html" class="nav-link"><span>API docs</span></a></li>
+        <li class="nav-item"><a href="/terms.html" class="nav-link"><span>Terms of Use</span></a></li>
+        <li class="nav-item"><a href="/privacy.html" class="nav-link"><span>Privacy Policy</span></a></li>
+        <li class="nav-item"><a href="/tickets.html" class="nav-link"><span>Support Help</span></a></li>
+      </ul>
+    </div>
+    <div class="footer__bottom d-flex justify-content-center pt-0 pb-2 justify-content-md-end">
+      <div class="setting-toggle align-items-center d-flex flex-nowrap">
+  <span class="mr-2">darkmode</span>
+        <span>off</span>
+        <div id="darkModeToggle" class="zawp-toggle zawp-toggle--checked-last not-functional mx-2 switch-darkmode" data-change-darkmode-to="off"><span class="zawp-toggle__switch m-0"></span></div>
+      <span>on</span>
+  </div>
+
+    </div>
+    <div class="footer__bottom d-md-flex align-items-center justify-content-between">
+      <p class="text-muted mb-md-0">&copy; 2024 SproutGigs.com. All Rights Reserved.</p>
+      <div class="social">
+        <a href="/tickets.html"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.facebook.com/groups/sproutgigs/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/sproutgigs" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.reddit.com/r/SproutGigs" target="_blank" rel="noopener noreferrer"><i class="fab fa-reddit-square"></i></a>
+        <a href="https://www.linkedin.com/company/sproutgigs/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="row mt-3 pl-4">
+      <span class="text-muted text-sm">47 U.S. Code § 230 Disclaimer: SproutGigs shall not be treated as the publisher or speaker of any information provided by job publishers.</span>
+    </div>
+  </div>
+</footer>
+
+        </div>
+
+        <script src="https://js.stripe.com/v3"></script>
+        <script type="text/javascript">
+            if (self == top) {
+                document.getElementsByTagName('body')[0].style.display='block';
+            } else {
+                top.location = self.location;
+            }
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141600439-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-141600439-1');
+                        gtag('set', {'user_id': '2bbff89f'});
+                    </script>
+
+            <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8d5a96d8290ece51","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2024.10.1","token":"8ab37f5b1f244daa9b89bb0f45eba75c"}' crossorigin="anonymous"></script>
+</body>
+</html>
